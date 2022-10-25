@@ -2,22 +2,55 @@
 
 export const userColumns = [
         
-    { field: 'date', headerName: 'Date', width: 70},
-    { field: 'descBody', headerName: 'Description', width: 130 },
-    {
-      field: 'age',
-      headerName: 'Age',
-      type: 'number',
-      width: 90,
+    { field: 'date', headerName: 'Date', width: 70,
+      renderCell: (params) => {
+        return(
+            <div>
+                {params.row.date}
+                {params.row.month}
+            </div>
+        );
+      }
+    },
+    { field: 'descBody', headerName: 'Description', width: 200,
+      renderCell: (params) => {
+        return(
+            <div>
+                {params.row.descHead}
+                {params.row.descBody}
+            </div>
+        );
+      } 
     },
     {
-      field: 'fullName',
-      headerName: 'Full name',
-      description: 'This column has a value getter and is not sortable.',
-      sortable: false,
+      field: 'venue',
+      headerName: 'Venue',
+      width: 200,
+    },
+    {
+      field: 'equipment',
+      headerName: 'Equipment',
+      width: 160
+    },
+    {
+      field: 'time',
+      headerName: 'Time',
+      width: 80
+    },
+    {
+      field: 'duration',
+      headerName: 'Duration',
+      width: 80
+    },
+    {
+      field: 'status',
+      headerName: 'Status',
       width: 160,
-      valueGetter: (params) =>
-        `${params.row.firstName || ''} ${params.row.lastName || ''}`,
+      renderCell: (params) => {
+        return(
+            <span className={`status ${params.row.status}`}>{params.row.status}</span>
+        );
+      } 
     }
 ]
 
