@@ -1,0 +1,12 @@
+.welcome{
+    color: rgb(220, 2, 231);
+    text-decoration: none;
+    margin-left: 10%;
+    padding-top: 7%;
+    padding-bottom: 3%;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 48px;
+}

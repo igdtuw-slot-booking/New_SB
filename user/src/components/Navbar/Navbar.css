@@ -1,0 +1,109 @@
+.logo {
+    width: 65px;
+    height: 65px;
+    /*margin-top: 8.5px;
+    padding-left: 210px;
+  
+    Inside auto layout */
+  
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+  
+.cb {
+    width: 69px;
+    height: 45px;
+    margin-right: 88%;
+}
+
+.Adname {
+    width: 119px;
+    height: 27px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+    
+    /* Text */
+    color: #24014e;
+}
+  
+.admin {
+    width: 100px;
+    height: 100px;
+    /* Alt Light */
+    background: #e6e4ed;
+    border-radius: 64px;
+
+}
+
+.menu-triggered img{
+    position: absolute;
+    top: 7px;
+    right: 20px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.dropdown-menues{
+    position:absolute;
+    top: 50px;
+    right: 5px;
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    padding: 20px 20px;
+    width: 150px;
+}
+
+.dropdown-menues::before{
+    content:'';
+    position: absolute;
+    top: -2px;
+    right: 20px;
+    height: 20px;
+    width: 20px;
+    background: var(--secondary-bg);
+    transform: rotate(45deg);
+}
+
+.dropdown-menues.active{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: var(--speed) ease;
+}
+
+.dropdown-menues.inactive{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: var(--speed) ease;
+}
+
+.dropdown-menues ul li{
+    padding: 3px 0px;
+    border-top: 1px solid rgb(0,0,0,0.05);
+}
+
+.dropdown-menues ul li:hover{
+    color: violet;
+    cursor: pointer;
+}
+
+.dropdownItemes{
+    display: flex;
+    margin: 1px auto;
+    margin-bottom: 2px;
+}
+
+.dropdownItemes a{
+    max-width: 70px;
+    margin-left: 5px;
+    transition: var(--speed);
+}

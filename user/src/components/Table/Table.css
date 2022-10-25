@@ -1,0 +1,85 @@
+.Table-admin{
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0,0,0,0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201,201,201,0.47) ;
+    padding: 20px;
+    margin: 20px;
+}
+
+.listTitle{
+    font-size: 2rem;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+}
+
+.in-nav{
+    background-color: white;
+    color: rgb(220, 2, 231);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 1rem;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+}
+
+.in-nav a{
+    color: inherit;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+}
+
+.in-nav ul{
+    padding:0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+}
+
+.in-nav a{
+    color: inherit;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: centre;
+    padding: .25rem;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+}
+
+.in-nav li.active {
+    background-color: blueviolet;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+}
+
+.in-nav li:hover {
+    background-color: rgb(226, 201, 249);
+}
+
+/*
+.status{
+    padding: 5px ;
+    border-radius: 5px;
+
+    &.Approved {
+        color: green;
+    }
+    &.Pending {
+        color: goldenrod;
+    }
+    &.Declined {
+        color: red;
+    }
+}
+
+*/
