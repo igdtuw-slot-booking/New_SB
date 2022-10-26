@@ -4,6 +4,7 @@ import mongoose from "mongoose";
 import authRouter from "./routes/auth.js";
 import userRouter from "./routes/user.js";
 import eventRouter from "./routes/event.js";
+import cookieParser from "cookie-parser";
 
 const app = express();
 dotenv.config();
@@ -21,6 +22,10 @@ mongoose.connection.on("disconnected", ()=>{
     console.log("mongoDB disconnected!")
 });
 
+
+//middleware
+
+app.use(cookieParser())
 app.use(express.json())
 
 app.use("/api/auth", authRouter);
