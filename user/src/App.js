@@ -20,7 +20,7 @@ export default function App() {
         <Route path="/home" element={ <LandingPage/> } />
         <Route path="loginadmin" element={<LoginAdmin/>}/>
         <Route path='loginuser' element={<LoginUser/>}/>
-        
+
         <Route path='admin/:userId' element={<Pending/>}/>
         <Route path='admin/:userId/approved' element={<Approved/>}/>
         <Route path='admin/:userId/declined' element={<Declined/>}/>

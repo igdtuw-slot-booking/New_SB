@@ -1,26 +1,12 @@
 //Temporary Data
 
 export const userColumns = [
-        
-    { field: 'date', headerName: 'Date', width: 70,
-      renderCell: (params) => {
-        return(
-            <div>
-                {params.row.date}
-                {params.row.month}
-            </div>
-        );
-      }
+    { field: 'id', headerName: 'ID', width: 40
+    }
+    ,
+    { field: 'date', headerName: 'Date', width: 70
     },
-    { field: 'descBody', headerName: 'Description', width: 200,
-      renderCell: (params) => {
-        return(
-            <div>
-                {params.row.descHead}
-                {params.row.descBody}
-            </div>
-        );
-      } 
+    { field: 'desc', headerName: 'Description', width: 200
     },
     {
       field: 'venue',
@@ -57,10 +43,8 @@ export const userColumns = [
 export const userRows = [
     {
         id: 1234567,
-        date: 28,
-        month: "AUG",
-        descHead: "Orientation",
-        descBody: "CB IGDTUW",
+        date: "28 AUG",
+        desc: "Orientation CB IGDTUW",
         venue: "Auditorium",
         equipment: "Equipments Required",
         time: "10:00 PM",
@@ -69,10 +53,8 @@ export const userRows = [
     },
     {
         id: 1234568,
-        date: 30,
-        month: "AUG",
-        descHead: "Orientation",
-        descBody: "LEANIN IGDTUW",
+        date: "30 AUG",
+        desc: "Orientation LEANIN IGDTUW",
         venue: "Auditorium",
         equipment: "Equipments Required",
         time: "10:00 PM",
@@ -80,10 +62,8 @@ export const userRows = [
         status: "Approved"
     },{
         id: 1234569,
-        date: 1,
-        month: "NOV",
-        descHead: "Orientation",
-        descBody: "GREENSPHERE IGDTUW",
+        date: "1 JULY",
+        desc: "Orientation GREENSPHERE IGDTUW",
         venue: "Seminar Hall",
         equipment: "Equipments Required",
         time: "10:00 PM",
@@ -91,10 +71,8 @@ export const userRows = [
         status: "Declined"
     },{
         id: 1234570,
-        date: 8,
-        month: "JAN",
-        descHead: "Orientation",
-        descBody: "INNERVE IGDTUW",
+        date: "8 OCT",
+        desc: "Orientation INNERVE IGDTUW",
         venue: "Auditorium",
         equipment: "Equipments Required",
         time: "10:00 PM",
@@ -102,10 +80,8 @@ export const userRows = [
         status: "Pending"
     },{
         id: 1234571,
-        date: 2,
-        month: "OCT",
-        descHead: "Orientation",
-        descBody: "E-CELL IGDTUW",
+        date: "2 MARCH",
+        desc: "Orientation E-CELL IGDTUW",
         venue: "E-303",
         equipment: "Equipments Required",
         time: "10:00 PM",
@@ -113,10 +89,8 @@ export const userRows = [
         status: "Pending"
     },{
         id: 1234572,
-        date: 7,
-        month: "JULY",
-        descHead: "Orientation",
-        descBody: "IEEE IGDTUW",
+        date: "7 OCT",
+        desc: "Orientation IEEE IGDTUW",
         venue: "IT-107",
         equipment: "Equipments Required",
         time: "10:00 PM",
@@ -124,10 +98,8 @@ export const userRows = [
         status: "Pending"
     },{
         id: 1234573,
-        date: 22,
-        month: "FEB",
-        descHead: "Orientation",
-        descBody: "BHAV IGDTUW",
+        date: "22 FEB",
+        desc: "Orientation BHAV IGDTUW",
         venue: "Conference Room",
         equipment: "Equipments Required",
         time: "10:00 PM",

@@ -6,7 +6,7 @@ export default function landingpage() {
     <div className='landingpage'>
         <h1> Celestial Biscuit IGDTUW</h1>
         <div>
-          <Link to="/"><h5>Home</h5></Link><h5>Home</h5>
+          <Link to="/"><h5>Home</h5></Link>
           <h5>About</h5>
           <h5>Team</h5>
         </div>
