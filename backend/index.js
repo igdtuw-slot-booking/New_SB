@@ -4,6 +4,8 @@ import mongoose from "mongoose";
 import authRouter from "./routes/auth.js";
 import userRouter from "./routes/user.js";
 import eventRouter from "./routes/event.js";
+//import venueRouter from "./routes/venue.js";
+
 import cookieParser from "cookie-parser";
 
 const app = express();
@@ -31,6 +33,7 @@ app.use(express.json())
 app.use("/api/auth", authRouter);
 app.use("/api/user", userRouter);
 app.use("/api/event", eventRouter);
+//app.use("/api/venue", venueRouter);
 
 app.use((err,req,res,next)=>{
     const errorStatus = err.status || 500
