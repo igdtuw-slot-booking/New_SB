@@ -15,3 +15,8 @@ export default function Admin() {
     </div>
   )
 }
+
+/*
+<Navbar/>
+      <h4 className='welcome'>Welcome Celestial !</h4>
+*/

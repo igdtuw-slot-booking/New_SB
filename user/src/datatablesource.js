@@ -1,42 +1,46 @@
 //Temporary Data
 
 export const userColumns = [
-    { field: 'id', headerName: 'ID', width: 40
+    { field: 'id', headerName: 'ID',
+    width:100 
+
     }
     ,
-    { field: 'date', headerName: 'Date', width: 70
+    { field: 'date', headerName: 'Date',
+    width:100 
+
     },
-    { field: 'desc', headerName: 'Description', width: 200
+    { field: 'desc', headerName: 'Description',
+    width:100 
     },
     {
       field: 'venue',
       headerName: 'Venue',
-      width: 200,
+      width:100 
+
     },
     {
       field: 'equipment',
       headerName: 'Equipment',
-      width: 160
+      width:100 
+
     },
     {
       field: 'time',
       headerName: 'Time',
-      width: 80
+      width:100 
+
     },
     {
       field: 'duration',
       headerName: 'Duration',
-      width: 80
+      width:100 
+
     },
     {
       field: 'status',
       headerName: 'Status',
-      width: 160,
-      renderCell: (params) => {
-        return(
-            <span className={`status ${params.row.status}`}>{params.row.status}</span>
-        );
-      } 
+      width:100 
     }
 ]
 

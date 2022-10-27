@@ -21,6 +21,9 @@ const VenueSchema = new mongoose.Schema({
     },
     facilities:{
         type: [String]
+    },
+    photos:{
+        type: Array
     }
     
 }

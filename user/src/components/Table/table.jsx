@@ -8,30 +8,32 @@ import { userColumns, userRows } from '../../datatablesource';
 export default function table() {
   return (
 
-    <div className='Table-admin'>
-        <div className='listTitle'>Events</div>
-        <div className='in-nav'>
-            <ul>
-                <li>
-                    <h6>Pending</h6>
-                </li>
-                <li>
-                    <h6>Approved</h6>
-                </li>
-                <li>
-                    <h6>Declined</h6>
-                </li>
-            </ul>
+    <div style={{ height: 400, width: '100%' }} className="Table-admin">
+      <div style={{ display: 'flex', height: '100%' }}>
+        <div style={{ flexGrow: 1 }}>
+            <div className='listTitle'>Events</div>
+                <div className='in-nav'>
+                    <ul>
+                        <li>
+                            <h6>Pending</h6>
+                        </li>
+                        <li>
+                            <h6>Approved</h6>
+                        </li>
+                        <li>
+                            <h6>Declined</h6>
+                        </li>
+                    </ul>
+                </div>
+            <DataGrid
+                rows={userRows}
+                columns={userColumns}
+                pageSize={5}
+                rowsPerPageOptions={[5]}
+                checkboxSelection
+            />
         </div>
-
-        <DataGrid
-            rows={userRows}
-            columns={userColumns}
-            pageSize={5}
-            rowsPerPageOptions={[5]}
-            checkboxSelection
-        />
-        
+      </div>
     </div>
   )
 }
@@ -78,5 +80,26 @@ export default function table() {
                 </TableBody>
             </Table>
         </TableContainer>
+
+
+
+
+
+
+
+<div className='listTitle'>Events</div>
+        <div className='in-nav'>
+            <ul>
+                <li>
+                    <h6>Pending</h6>
+                </li>
+                <li>
+                    <h6>Approved</h6>
+                </li>
+                <li>
+                    <h6>Declined</h6>
+                </li>
+            </ul>
+        </div>
 
 */
