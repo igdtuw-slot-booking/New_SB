@@ -1,20 +1,14 @@
-import "./landingpage.css";
-import { Link } from "react-router-dom";
+import '../../pages/landingpage/landingpage.css';
+import NavBar from "../../pages/landingpage/NavBar";
+import Content from "../../pages/landingpage/Content";
 
-export default function landingpage() {
+function App(){
   return (
-    <div className='landingpage'>
-        <h1> Celestial Biscuit IGDTUW</h1>
-        <div>
-          <Link to="/"><h5>Home</h5></Link>
-          <h5>About</h5>
-          <h5>Team</h5>
-        </div>
-        <div>
-          <h4>Login as </h4>
-          <Link to="loginadmin"><h5>Admin</h5></Link>
-          <Link to="loginuser"><h5>Student</h5></Link>
-        </div>
+    <div className="App">
+    <NavBar/>
+    <Content/>
     </div>
   )
 }
+
+export default App;

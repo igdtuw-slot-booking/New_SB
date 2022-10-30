@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import LandingPage from "./pages/landingpage/landingpage.jsx";

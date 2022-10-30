@@ -1,0 +1,82 @@
+
+.loginpage{
+    position: relative;
+    width: 2vw;
+    height: 1vh;
+    background: linear-gradient(113.32deg, #C9B2F6 0.73%, #915FD1 58.72%, #6109D9 105.8%);
+}
+.leftside{
+    position: absolute;
+    width: 690px;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+
+/* Background */
+background: #FCFCFC;
+}
+.loginAdminContent{
+       display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0px;
+      gap: 20px;
+
+      position: absolute;
+      width: 350px;
+      height: 308px;
+      left: 202px;
+      top: 200px;
+}
+.loginAdminText{
+    width: 350px;
+    height: 60px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+
+    color: #390479;
+/* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.admin{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0;
+
+
+width: 300px;
+height: 66px;
+
+/* Text */
+color:white;
+background: #24014E;
+border-radius: 50px;
+font-size: x-large;
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+.ellipse1{
+    width:100px;
+    left:100px;
+    top:100px;
+    height:40px;
+    border-radius:50%;
+    background:#24014E;
+}
+.InputText{
+    display: flex;
+    align-items: center;
+    height: 200px;
+}
