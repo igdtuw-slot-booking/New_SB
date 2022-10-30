@@ -1,11 +1,6 @@
 //Temporary Data
 
 export const userColumns = [
-    { field: 'id', headerName: 'ID',
-    width:100 
-
-    }
-    ,
     { field: 'date', headerName: 'Date',
     width:100 
 

@@ -28,9 +28,8 @@ export default function table() {
             <DataGrid
                 rows={userRows}
                 columns={userColumns}
-                pageSize={5}
+                pageSize={6}
                 rowsPerPageOptions={[5]}
-                checkboxSelection
             />
         </div>
       </div>
