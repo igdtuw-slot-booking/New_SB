@@ -1,40 +1,54 @@
 //Temporary Data
 
 export const userColumns = [
-    { field: 'date', headerName: 'Date',
+    { field: 'society', headerName: 'Society',
     width:100 
-
     },
-    { field: 'desc', headerName: 'Description',
+    { field: 'eventDesc', headerName: 'Description',
     width:100 
     },
     {
-      field: 'venue',
+      field: 'Date',
+      headerName: 'Date',
+      width:100 
+
+    },
+    {
+      field: 'Venue',
       headerName: 'Venue',
       width:100 
 
     },
     {
+      field: 'time_Start',
+      headerName: 'Start Time',
+      width:100 
+
+    },
+    {
+      field: 'time_End',
+      headerName: 'End Time',
+      width:100 
+
+    },
+    {
+      field: 'issuer',
+      headerName: 'issuer',
+      width:100 
+    },
+    {
       field: 'equipment',
-      headerName: 'Equipment',
+      headerName: 'equipment',
       width:100 
-
-    },
-    {
-      field: 'time',
-      headerName: 'Time',
-      width:100 
-
-    },
-    {
-      field: 'duration',
-      headerName: 'Duration',
-      width:100 
-
     },
     {
       field: 'status',
       headerName: 'Status',
+      width:100 
+    },
+    {
+      field: 'venue',
+      headerName: 'venue',
       width:100 
     }
 ]

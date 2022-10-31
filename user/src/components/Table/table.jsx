@@ -1,11 +1,15 @@
 import React from 'react'
 import "./Table.css";
+import useFetch from "../../Hooks/useFetch.js"
 
 import { DataGrid } from '@mui/x-data-grid';
-import { userColumns, userRows } from '../../datatablesource';
+import { userColumns } from '../../datatablesource';
 
 
-export default function table() {
+export default function Table() {
+
+    const {data,loading,error} = useFetch("/event");
+
   return (
 
     <div style={{ height: 400, width: '100%' }} className="Table-admin">
@@ -26,10 +30,11 @@ export default function table() {
                     </ul>
                 </div>
             <DataGrid
-                rows={userRows}
+                rows={data}
                 columns={userColumns}
                 pageSize={6}
                 rowsPerPageOptions={[5]}
+                getRowId={row=>row._id}
             />
         </div>
       </div>

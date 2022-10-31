@@ -2,7 +2,7 @@ import React from 'react'
 import "./Admin.css";
 
 import Navbar from "../Navbar/Navbar.jsx";
-import Table from "../Table/table.jsx";
+import Table from "../Table/Table.jsx";
 
 
 export default function Admin() {
@@ -10,7 +10,7 @@ export default function Admin() {
     <div>
       <Navbar/>
       <h4 className='welcome'>Welcome Celestial !</h4>
-      <Table />
+      <Table/>
       
     </div>
   )

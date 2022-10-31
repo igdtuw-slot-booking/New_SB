@@ -1,7 +1,7 @@
 import express from "express";
 import { updateUser , deleteUser , getUser , getallUser } from "../controllers/user.js"
 const router = express.Router();
-import { verifyUser, verifyAdmin } from "../utils/verifyToken.js";
+//import { verifyUser, verifyAdmin } from "../utils/verifyToken.js";         //use verifyadmin verifyuser from verifyToken.js as per the requirement ---like kis function ke liye kya verification needed hai
 
 /*
 router.get("/checkauth", verifyToken, (req,res,next)=>{
@@ -19,16 +19,16 @@ router.get("/checkadmin/:id", verifyAdmin, (req,res,next)=>{
 */
 
 //UPADATE
-router.put("/:id", verifyUser, updateUser);
+router.put("/:id", updateUser);
 
 //DELETE
-router.delete("/:id", verifyUser, deleteUser );
+router.delete("/:id", deleteUser );
 
 //GET
-router.get("/:id", verifyUser, getUser);
+router.get("/:id", getUser);
 
 //GETALL
-router.get("/", verifyAdmin, getallUser);
+router.get("/", getallUser);
 
 
 export default router
