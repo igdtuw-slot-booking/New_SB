@@ -33,8 +33,8 @@ export default function App() {
         <Route path='admin/:userId/declined' element={<Declined/>}/>
         {/* "^7"   eg. classname="title^7" */}    
         <Route path="user/:userId" element={<User/>}/>
-        {/* "^8"   eg. classname="title^8" */}    
-        {/*<Route path="user/:userId/venue" element={<Venue/>}/>
+        {/* "^8"   eg. classname="title^8"*/}   
+        <Route path="user/:userId/venue" element={<Venue/>}/>
         {/* "^9"   eg. classname="title^9" */}    
         <Route path="user/:userId/calender" element={<Calender/>}/> 
         {/* "^10"   eg. classname="title^10" */}    
