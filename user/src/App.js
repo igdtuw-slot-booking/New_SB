@@ -9,7 +9,7 @@ import Pending from "./pages/Admin/AdminPending/Adminpending.jsx";
 import Approved from "./pages/Admin/AdminApproved/Adminapproved.jsx";
 import Declined from "./pages/Admin/AdminDeclined/Admindeclined.jsx";
 import User from "./pages/User/User.jsx";
-import Venue from "./pages/Venue/Venue.js";
+//import Venue from "./pages/Venue/Venue.js";
 import Calender from "./pages/Calender/Calender.jsx";
 import { Routes, Route } from "react-router-dom";
 
@@ -34,7 +34,7 @@ export default function App() {
         {/* "^7"   eg. classname="title^7" */}    
         <Route path="user/:userId" element={<User/>}/>
         {/* "^8"   eg. classname="title^8" */}    
-        <Route path="user/:userId/venue" element={<Venue/>}/>
+        {/*<Route path="user/:userId/venue" element={<Venue/>}/>
         {/* "^9"   eg. classname="title^9" */}    
         <Route path="user/:userId/calender" element={<Calender/>}/> 
         {/* "^10"   eg. classname="title^10" */}    

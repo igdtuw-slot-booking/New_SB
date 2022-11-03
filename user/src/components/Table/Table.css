@@ -3,6 +3,19 @@
     box-shadow: 2px 4px 10px 1px rgba(201,201,201,0.47) ;
     padding: 20px;
     margin: 20px;
+    background-color: white;
+    border-radius: 15px;
+    position: absolute;
+ 
+  left: 50px;
+  top: 168px;
+  width: 1300px;
+  height: 450px;
+
+  padding-left: 46px;
+  padding-right: 63.17 px;
+  padding-top: 25px;
+  padding-bottom: 23px;
 }
 
 .listTitle{

@@ -7,7 +7,7 @@ import Table from "../Table/Table.jsx";
 
 export default function Admin() {
   return (
-    <div>
+    <div className="admin-App">
       <Navbar/>
       <h4 className='welcome'>Welcome Celestial !</h4>
       <Table/>

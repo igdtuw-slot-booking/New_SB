@@ -1,32 +1,38 @@
+.container-fluid{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
 .logo {
     width: 65px;
     height: 65px;
     /*margin-top: 8.5px;
     padding-left: 210px;
-  
+  margin-left: 43px;
     Inside auto layout */
-  
+    margin-left: 43px;
     flex: none;
     order: 0;
     flex-grow: 0;
 }
-  
+
 .cb {
     width: 69px;
     height: 45px;
-    margin-right: 88%;
+   margin-right: 1364px;
 }
 
 .Adname {
     width: 119px;
-    height: 27px;
+    height: 7px;
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    line-height: 27px;
+    line-height: 2px;
     /* identical to box height */
-    
+    margin-left: 1234px;
     /* Text */
     color: #24014e;
 }
@@ -37,18 +43,20 @@
     /* Alt Light */
     background: #e6e4ed;
     border-radius: 64px;
+    margin-right: 130px;
 
 }
 
 .menu-triggered img{
     position: absolute;
-    top: 7px;
-    right: 20px;
-    height: 25px;
-    width: 25px;
-    border-radius: 50%;
+    top: 17px;
+    right: 30px;
+    height: 54px;
+    width: 54px;
+    border-radius: 64px;
     overflow: hidden;
     cursor: pointer;
+    margin-left: 77px;
 }
 
 .dropdown-menues{

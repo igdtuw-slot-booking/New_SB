@@ -5,7 +5,9 @@ body{
     background-image: url('../../../src/assets/bgcb.png');
     height:0;
     height: 100vh;
+    background-repeat: no-repeat;
 }
+
 .App{
     position: relative;
     width: 1380px;
@@ -34,7 +36,7 @@ nav ul li{
     font-weight: bold;
     list-style-type: none;
 }
-.navbar{
+.landing-navbar{
 display: flex;
 flex-direction: row;
 justify-content: center;
@@ -85,7 +87,7 @@ left: 60px;
 top: 400px;
 }
 
-.Admin{
+.landing-Admin{
     font-weight: bold;
     padding: 10px 20px;
     color:white;

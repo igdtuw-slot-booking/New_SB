@@ -1,12 +1,20 @@
 .welcome{
     color: rgb(220, 2, 231);
     text-decoration: none;
-    margin-left: 10%;
+    margin-left: 1.1%;
     padding-top: 7%;
     padding-bottom: 3%;
     font-family: "Poppins";
     font-style: normal;
     font-weight: 600;
-    font-size: 50px;
+    font-size: 30px;
     line-height: 48px;
+}
+
+.admin-App{
+    width: 115%;
+  height: 100vh;
+  justify-content: center;
+  align-items: left;
+  background-color: #e6e4ed;
 }

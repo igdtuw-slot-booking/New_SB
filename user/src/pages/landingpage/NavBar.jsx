@@ -6,7 +6,7 @@ function NavBar() {
         <div className='Parent'>
         <nav>
             <div className='Logo'></div>
-            <ul className='navbar'>
+            <ul className='landing-navbar'>
                 <button className='home'><a href="landingpage.jsx">Home</a></button>
                 <li><a href="">About</a></li>
                 <li><a href="">Team</a></li>
