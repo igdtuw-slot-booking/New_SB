@@ -10,7 +10,6 @@ export default function Admin() {
     <div className="admin-App">
       <Navbar/>
       <h4 className='welcome'>Welcome Celestial !</h4>
-      <Table/>
       
     </div>
   )

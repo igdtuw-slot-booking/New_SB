@@ -8,8 +8,10 @@ import Pending from "./pages/Admin/AdminPending/Adminpending.jsx";
 //import Admin from "./components/Admin/Admin.jsx";
 import Approved from "./pages/Admin/AdminApproved/Adminapproved.jsx";
 import Declined from "./pages/Admin/AdminDeclined/Admindeclined.jsx";
+import RegisterAdmin from './pages/registerAdmin/registerAdmin.jsx';
+import RegisterUser from "./pages/registerUser/registerUser.jsx";
 import User from "./pages/User/User.jsx";
-//import Venue from "./pages/Venue/Venue.js";
+import Venue from "./pages/Venue/Venue.js";
 import Calender from "./pages/Calender/Calender.jsx";
 import { Routes, Route } from "react-router-dom";
 
@@ -26,6 +28,10 @@ export default function App() {
         {/* "^3"   eg. classname="title^3" */}    
         <Route path='loginuser' element={<LoginUser/>}/>
         {/* "^4"   eg. classname="title^4" */}    
+        <Route path="registeradmin" element={<RegisterAdmin/>}/>
+        {/* "^3"   eg. classname="title^3" */}    
+        <Route path='registeruser' element={<RegisterUser/>}/>
+        {/* "^4"   eg. classname="title^4" */}   
         <Route path='admin/:userId' element={<Pending/>}/>
         {/* "^5"   eg. classname="title^5" */}    
         <Route path='admin/:userId/approved' element={<Approved/>}/>

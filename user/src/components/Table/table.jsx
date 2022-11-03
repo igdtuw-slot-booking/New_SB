@@ -8,7 +8,7 @@ import { userColumns } from '../../datatablesource';
 
 export default function Table() {
 
-    const {data,loading,error} = useFetch("/event");
+    const {data,loading,error} = useFetch("/event?status=Approved");
 
   return (
 
@@ -16,6 +16,7 @@ export default function Table() {
       <div style={{ display: 'flex', height: '100%' }}>
         <div style={{ flexGrow: 1 }}>
             <div className='listTitle'>Events</div>
+
                 <div className='in-nav'>
                     <ul>
                         <li>
@@ -29,13 +30,21 @@ export default function Table() {
                         </li>
                     </ul>
                 </div>
-            <DataGrid
-                rows={data}
-                columns={userColumns}
-                pageSize={6}
-                rowsPerPageOptions={[5]}
-                getRowId={row=>row._id}
-            />
+
+            {loading ? (
+                "Loading"
+            ) : (
+                <>
+                    <DataGrid
+                    rows={data}
+                    columns={userColumns}
+                    pageSize={6}
+                    rowsPerPageOptions={[5]}
+                    getRowId={row=>row._id}
+                    />
+                </>
+            )}
+            
         </div>
       </div>
     </div>
