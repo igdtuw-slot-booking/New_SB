@@ -8,7 +8,7 @@ import { userColumns } from '../../datatablesource';
 
 export default function Table() {
 
-    const {data,loading,error} = useFetch("/event");
+    const {data,loading,error} = useFetch("/event?status=Approved");
 
   return (
 
@@ -41,14 +41,21 @@ export default function Table() {
             
             </MDBRow>
            
-                
-            <DataGrid
-                rows={data}
-                columns={userColumns}
-                pageSize={6}
-                rowsPerPageOptions={[5]}
-                getRowId={row=>row._id}
-            />
+
+            {loading ? (
+                "Loading"
+            ) : (
+                <>
+                    <DataGrid
+                    rows={data}
+                    columns={userColumns}
+                    pageSize={6}
+                    rowsPerPageOptions={[5]}
+                    getRowId={row=>row._id}
+                    />
+                </>
+            )}
+            
         </div>
       </div>
     </div>
