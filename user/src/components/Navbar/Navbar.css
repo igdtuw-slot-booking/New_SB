@@ -7,11 +7,7 @@
 .logo {
     width: 65px;
     height: 65px;
-    /*margin-top: 8.5px;
-    padding-left: 210px;
-  margin-left: 43px;
-    Inside auto layout */
-    margin-left: 43px;
+    margin-left: 44px;
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -20,21 +16,24 @@
 .cb {
     width: 69px;
     height: 45px;
-   margin-right: 1364px;
+  
 }
 
 .Adname {
     width: 119px;
-    height: 7px;
+    height: 100px;
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    line-height: 2px;
+    line-height: 27px;
     /* identical to box height */
-    margin-left: 1234px;
+    
     /* Text */
     color: #24014e;
+    padding-top: 30px;
+    margin-left: 1040px;
+    background-color: red;
 }
   
 .admin {
@@ -44,7 +43,7 @@
     background: #e6e4ed;
     border-radius: 64px;
     margin-right: 130px;
-
+    
 }
 
 .menu-triggered img{

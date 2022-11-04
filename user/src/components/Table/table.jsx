@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Table.css";
 import useFetch from "../../Hooks/useFetch.js"
-
+import { MDBRow, MDBCol } from 'mdb-react-ui-kit';
 import { DataGrid } from '@mui/x-data-grid';
 import { userColumns } from '../../datatablesource';
 
@@ -15,7 +15,12 @@ export default function Table() {
     <div style={{ height: 400, width: '100%' }} className="Table-admin">
       <div style={{ display: 'flex', height: '100%' }}>
         <div style={{ flexGrow: 1 }}>
+            <MDBRow>
+                <MDBCol>
             <div className='listTitle'>Events</div>
+            <div className='checkevents'>Check</div>
+                </MDBCol>
+                <MDBCol>
                 <div className='in-nav'>
                     <ul>
                         <li>
@@ -29,6 +34,14 @@ export default function Table() {
                         </li>
                     </ul>
                 </div>
+            
+                    </MDBCol>
+           
+
+            
+            </MDBRow>
+           
+                
             <DataGrid
                 rows={data}
                 columns={userColumns}

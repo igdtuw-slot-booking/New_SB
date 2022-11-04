@@ -9,7 +9,7 @@ import Pending from "./pages/Admin/AdminPending/Adminpending.jsx";
 import Approved from "./pages/Admin/AdminApproved/Adminapproved.jsx";
 import Declined from "./pages/Admin/AdminDeclined/Admindeclined.jsx";
 import User from "./pages/User/User.jsx";
-//import Venue from "./pages/Venue/Venue.js";
+import Venue from "./pages/Venue/Venue.js";
 import Calender from "./pages/Calender/Calender.jsx";
 import { Routes, Route } from "react-router-dom";
 

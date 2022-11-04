@@ -13,7 +13,7 @@ function Content() {
                      <h2>Login as:</h2>
                 </div>
                 <div className="Buttons">
-                    <button className='Admin'>Admin</button>
+                    <button className='landing-Admin'>Admin</button>
                     <button className='Student'>Student</button>
                 </div>
             </main>
