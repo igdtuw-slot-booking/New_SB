@@ -1,6 +1,6 @@
 import '../../pages/landingpage/landingpage.css';
 import Header from "../../pages/landingpage/Header";
-import NavBar from "../../pages/landingpage/NavBar";
+import NavBar from "../../pages/landingpage/LandingNavBar";
 import Content from "../../pages/landingpage/Content";
 
 function App(){
