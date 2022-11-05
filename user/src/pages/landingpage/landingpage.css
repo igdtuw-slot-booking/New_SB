@@ -1,140 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap');
 *{
+    margin:0;
+    padding:0;
     box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
 }
-body{
-    background-image: url('../../../src/assets/bgcb.png');
-    height:0;
-    height: 100vh;
-    background-repeat: no-repeat;
-}
-
-.App{
+.landingPage{
     position: relative;
-    width: 1380px;
-    height: 0;
+    min-width: 100%;
+    background-image:url('../../../src/assets/bgcb.png');
+    height: 100vh;
 }
-nav{
-    display: flex;
-    justify-content: flex-end;
-    padding: 0 80px;
-}
-nav ul{
-    display:flex;
-    list-style-image: none;
-    gap: 50px;
-}
-
-nav ul button{
-    border: 5px;
-    background-color: blueviolet;
-    font-size: 1.3rem;
-    font-weight: bold;
-}
-
-nav ul li{
-    font-size: 1.3rem;
-    font-weight: bold;
-    list-style-type: none;
-}
-.landing-navbar{
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 0px;
-gap: 150px;
-width: 502px;
-height: 43px;
-
-}
-.content{
+.landing_nav-items{
     display: flex;
     flex-direction: column;
-    gap:10px;
-    margin:80px;
-}
-
-main{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-h1{
-    margin: 0;
-    font-size: 2.5rem;
-}
-.text{
-    position: absolute;
-width: 545px;
-height: 288px;
-left: 150px;
-top: 200px;
-color: #24014E;
-}
-
-.Buttons{
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-align-items: center;
-padding: 0px;
-gap: 20px;
-cursor: pointer;
-position: absolute;
-width: 420px;
-height: 66px;
-left: 60px;
-top: 400px;
-}
-
-.landing-Admin{
-    font-weight: bold;
-    padding: 10px 20px;
-    color:white;
-    font-size: 1.0rem;
-    background-color: rgb(36,1,78);
-}
-.Student{
-    font-weight: bold;
-    padding: 20px 20px;
-    color:white;
-    font-size: 1.0rem;
-    background-color: rgb(36,1,78);
-}
-.Rocket{
-    position: absolute;
-    width: 933px;
-    height: 800px;
-    left: 450px;
-    top: 0px;
-    /*transform: matrix(-0.95, -0.31, -0.31, 0.95, 0, 0);*/
-} 
-.Logo{
-    background-image: url('../../../src/assets/cblogo.png');
-    display: flex;
-    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    padding: 0px;
-    gap: 14px;
     position: absolute;
-    width: 186px;
-    height: 72px;
-    left: 50px;
-    top: 10px;
-
+    width: 410px;
+    height: 50px;
+    left: 1000px;
+    top: 20px;
+    background: #FCFCFC;
+    border-radius: 25px 0px 0px 25px;
+ }
+ h1{
+    margin: 0;
+    font-size: 2.6rem;
 }
-@media screen and (min-width:800px) {
-    .content{
-      flex-direction: row;
-      margin:80px;
-    };
+.landingtext{
+    position: absolute;
+    width: 545px;
+    height: 288px;
+    left: 150px;
+    top: 170px;
+    color: #24014E;
+}
+.landinglogin{
+    color:#24014E;
+    margin-top:15px;
+    font-size:1.4rem;
+}
 
-    .h1{
-        font-size: 3.5rem;
-    }
-    .Admin{
-        padding: 20px 30px;
-    }
-    
+.landingButtons{
+   display:flex;
+   flex-direction: row;
+   margin-top:30px;
+   gap: 40px; 
+   position: absolute;
+   width: 350px;
+   height: 50px;
+   left: 145px;
+   top:400px;
+}
+
+.landingAdmin{
+    font-weight: bold;
+    justify-content:space-between;
+    font-size: 1.0rem;
+    color:white;
+    width:150px;
+    border-radius:20px;
+    background-color: rgb(36,1,78);
+}
+.landingStudent{
+    font-weight: bold;
+    justify-content:space-between;
+    font-size: 1.0rem;
+    color:white;
+    width:150px;
+    border-radius:20px;
+    background-color: rgb(36,1,78);
+}
+.landingRocket{
+    position: absolute;
+    width: 440px; 
+    height: 470px;
+    left: 800px;
+    top: 160px;
+} 
+.landinglogo{
+    margin-left:0px;
+    margin-top: 20px;
+    height:60px;
+   
 }

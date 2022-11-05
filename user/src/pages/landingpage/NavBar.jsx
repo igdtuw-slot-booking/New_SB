@@ -1,16 +1,28 @@
 import React from 'react';
-import '../../pages/landingpage/landingpage.css';
+import { MDBRow, MDBCol } from 'mdb-react-ui-kit';
 
 function NavBar() {
     return (
-        <div className='Parent'>
+        <div>
         <nav>
-            <div className='Logo'></div>
-            <ul className='landing-navbar'>
-                <button className='home'><a href="landingpage.jsx">Home</a></button>
-                <li><a href="">About</a></li>
-                <li><a href="">Team</a></li>
-            </ul>
+            <div class="landing_nav-items">
+                {/* <ul> */}
+                    <MDBRow>
+                        <MDBCol>
+                   HOME
+                        </MDBCol>
+                        <MDBCol>
+                       ABOUT     
+                        </MDBCol>
+                        <MDBCol>
+                            TEAM
+                        </MDBCol>
+                    </MDBRow>
+                   {/* <li>HOME </li> 
+                   <li>ABOUT</li> 
+                   <li>TEAM</li> 
+                </ul> */}
+            </div>
         </nav>
         </div>
     )

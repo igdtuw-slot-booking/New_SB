@@ -1,10 +1,12 @@
 import '../../pages/landingpage/landingpage.css';
+import Header from "../../pages/landingpage/Header";
 import NavBar from "../../pages/landingpage/NavBar";
 import Content from "../../pages/landingpage/Content";
 
 function App(){
   return (
-    <div className="App">
+    <div className= "landingpage">
+    <Header/>
     <NavBar/>
     <Content/>
     </div>
