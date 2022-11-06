@@ -13,7 +13,6 @@ const StyledInput = styled.input`
       padding: 1rem;
       border: none;
       outline: none;
-      margin-top:10px;
       margin-botton:0px;
       font-size: 1rem;
       font-weight: bold;

@@ -9,7 +9,7 @@ import Pending from "./pages/Admin/AdminPending/Adminpending.jsx";
 import Approved from "./pages/Admin/AdminApproved/Adminapproved.jsx";
 import Declined from "./pages/Admin/AdminDeclined/Admindeclined.jsx";
 import RegisterAdmin from './pages/registerAdmin/registerAdmin.jsx';
-import RegisterUser from "./pages/registerUser/Registeruser.jsx";
+import RegisterUser from "./pages/registerUser/registerUser.jsx";
 import UserPending from "./pages/User/Userpending/UserPending.jsx";
 import UserApproved from "./pages/User/Userapproved/UserApproved.jsx";
 import UserCancelled from "./pages/User/Usercancelled/UserCancelled.jsx";
