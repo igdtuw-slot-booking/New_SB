@@ -5,13 +5,13 @@ export default function Button({content}) {
 }
 
 const StyledButton = styled.button`
-   background: linear-gradient(to right, rgb(57, 4, 121));
+   background: #390479;
    text-transform: uppercase;
    letter-spacing: 0.2rem;
    height: 3rem;
    width: 65%;
    border: none;
-   color: black;
+   color: white;
    border-radius: 2rem;
    cursor: pointer;
 `;

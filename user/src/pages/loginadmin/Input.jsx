@@ -1,16 +1,17 @@
 import styled from "styled-components";
 
 export default function Input({type,placeholder}){
-    return <StyledInput className="InputText" type={type} placeholder={placeholder}/>;
+    return <StyledInput className="reg_page_InputText" type={type} placeholder={placeholder}/>;
 }
  
 const StyledInput = styled.input`
-      background: rgba(255, 255, 255, 0.15);
+      background: white;
       box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
       border-radius: 2rem;
       width: 80%;
       height: 3rem;
       padding: 1rem;
+      margin-top:5px;
       border: none;
       outline: none;
       color: #390479;

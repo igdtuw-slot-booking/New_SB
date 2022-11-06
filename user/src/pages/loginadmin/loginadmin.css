@@ -1,36 +1,35 @@
-.loginpage{
-    position: relative;
-    width: 2vw;
-    height: 1vh;
-    background: linear-gradient(113.32deg, #C9B2F6 0.73%, #915FD1 58.72%, #6109D9 105.8%);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap');
+
+.admin_page_student{
+    background: linear-gradient(113.32deg, rgba(180, 156, 226, 0.984) 0.73%, #6f19e1f0 58.72%, #6206e2f7 105.8%);
+    background-size: "cover";
+    height: 100vh; 
+    background-repeat:no-repeat; 
+    margin-left: 45%;
 }
-.leftside{
+.admin_page_leftside{
     position: absolute;
-    width: 690px;
+    width: 40%;
     height: 100vh;
     left: 0px;
     top: 0px;
-
-/* Background */
-background: #FCFCFC;
+    background: #FCFCFC; 
+   
 }
-.loginAdminContent{
-       display: flex;
+.admin_page_content{
+     display: flex;
       flex-direction: column;
       align-items: flex-start;
-      padding: 0px;
       gap: 20px;
-
       position: absolute;
       width: 350px;
       height: 308px;
-      left: 202px;
-      top: 200px;
+      left: 150px;
+      margin-top: 200px;
 }
-.loginAdminText{
+.admin_page_text{
     width: 350px;
     height: 60px;
-
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
@@ -38,21 +37,21 @@ background: #FCFCFC;
 
     color: #390479;
 /* Inside auto layout */
-
+  top:200px;
     flex: none;
     order: 0;
     flex-grow: 0;
 }
-.admin{
+.admin_page_admin{
     display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
 padding: 0;
 
-
+margin-top:30px;
 width: 300px;
-height: 66px;
+height: 54px;
 
 /* Text */
 color:white;
@@ -66,11 +65,77 @@ flex: none;
 order: 1;
 flex-grow: 0;
 }
-.ellipse1{
-    width:100px;
-    left:100px;
-    top:100px;
-    height:40px;
-    border-radius:50%;
-    background:#24014E;
+.admin_page_Maincontent{
+            box-sizing:border-box;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items : center;
+            padding:10px 30px;
+            position:absolute;
+            width:27vw;
+            height: 35vw;
+            left:870px;
+            top:60px;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.49) 0%, rgba(255, 255, 255, 0.14) 100%);
+            border: 1px solid rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(15px);
+            border-radius:40px;
+           
+           
+}
+.admin_page_Helloadmin{
+           margin: 3rem 0 2rem 0;
+           color:#390479;
+           font-weight: bold;
+           font-size:xx-large;
+}
+.admin_page_InputContainer{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding:20px 30px;
+    gap:10px;
+    color:#390479;
+    width: 120%;
+    height:24%; 
+    border-radius: 50px;
+}
+
+.admin_page_Forgotpassword{
+             margin:2rem;
+             cursor :pointer;  
+             align-items:center;
+             justify-content:center;
+             color:#390479;
+             font-weight: bold;
+             font-size: large;
+             margin-top:50px;
+}
+.admin_page_buttoncontainer{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color:#390479;
+    gap:10px;
+    width: 120%;
+    height:24%;
+}
+.admin_page_Register{
+          display:flex;
+          justify-content:center;
+          align-items: center;
+          width: 140%;
+          height:30%;
+          color:#390479;
+          font-size:large;
+          font-weight: bold;
+          margin-top:0px;
+          cursor :pointer;  
+}
+.admin_page_InputText{
+    display: flex;
+    align-items: center;
+    height: 200px;
 }
