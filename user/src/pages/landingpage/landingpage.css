@@ -5,52 +5,60 @@
     box-sizing: border-box;
     font-family: 'poppins',sans-serif;
 }
-.landingPage{
-    position: relative;
+ .landingpage{
+     position: relative;
     min-width: 100%;
     background-image:url('../../../src/assets/bgcb.png');
-    height: 100vh;
+    height: 100vh; 
+    
 }
+
 .landing_nav-items{
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: absolute;
-    width: 410px;
+    width: 525px;
     height: 50px;
     left: 1000px;
     top: 20px;
     background: #FCFCFC;
     border-radius: 25px 0px 0px 25px;
+    align-items: right;
+    margin-right: 0%;
  }
  h1{
     margin: 0;
     font-size: 2.6rem;
 }
 .landingtext{
-    position: absolute;
+    position:relative;
     width: 545px;
-    height: 288px;
-    left: 150px;
-    top: 170px;
+    height: 288px; 
+    left: 144px;
+    top: 160px; 
     color: #24014E;
+    text-align: left;
+    
 }
 .landinglogin{
     color:#24014E;
-    margin-top:15px;
+    margin-top:10%;
     font-size:1.4rem;
+    text-align: left;
+    
+    
 }
 
 .landingButtons{
    display:flex;
    flex-direction: row;
-   margin-top:30px;
    gap: 40px; 
-   position: absolute;
+   position:relative;
    width: 350px;
    height: 50px;
    left: 145px;
-   top:400px;
+   top:160px;
 }
 
 .landingAdmin{
@@ -79,7 +87,7 @@
     top: 160px;
 } 
 .landinglogo{
-    margin-left:0px;
+    margin-left:-1028px;
     margin-top: 20px;
     height:60px;
    
