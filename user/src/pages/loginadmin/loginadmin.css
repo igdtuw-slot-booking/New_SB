@@ -139,3 +139,8 @@ flex-grow: 0;
     align-items: center;
     height: 200px;
 }
+.InputText{
+    display: flex;
+    align-items: center;
+    height: 200px;
+}
