@@ -8,14 +8,8 @@ export const userColumns = [
     width:100 
     },
     {
-      field: 'Date',
+      field: 'date',
       headerName: 'Date',
-      width:100 
-
-    },
-    {
-      field: 'Venue',
-      headerName: 'Venue',
       width:100 
 
     },
