@@ -22,6 +22,7 @@ function App() {
   <div className="reg_page_InputContainer">
     <Input type="text" placeholder="Email" />
     <Input type="password" placeholder="Password" />
+    <Input type="password" placeholder="Confirm Password" />
     
   </div>
   <div className="reg_page_Forgotpassword">forgot password?</div>
@@ -29,7 +30,7 @@ function App() {
     <Button content="Login" />
   </div>
   <HorizontalRule />
-  <div className="reg_page_Register">Register Here</div>
+  <div className="reg_page_Register">Already Have an Account?</div>
   <div className="reg_page_buttoncontainer">
     <Button content="Sign Up" />
   </div>
