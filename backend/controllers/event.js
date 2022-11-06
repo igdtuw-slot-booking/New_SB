@@ -45,3 +45,15 @@ export const getallEvent = async (req,res,next)=>{
         next(err);
     }
 };
+
+export const countByStatus = async (req,res,next)=>{
+    const statuses = req.query.status.split(',')
+    try{
+        const list = await Promise.all(statuses.map(status=>{
+            return Event.countDocuments({status:status})
+        }))
+        res.status(200).json(list);
+    } catch(err){
+        next(err);
+    }
+};

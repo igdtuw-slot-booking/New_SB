@@ -10,9 +10,9 @@ function Content() {
                     <h1>PORTAL OF IGDTUW</h1>
                      <h2 className='landinglogin'>Login as:</h2>
                 </div>
-                <div className="landingButtons">
-                    <button className='landingAdmin'>Admin</button>
-                    <button className='landingStudent'>Student</button>
+                <div className="Buttons">
+                    <button className='Admin'>Admin</button>
+                    <button className='Student'>Student</button>
                 </div>
                 <figure>
                     <img src={Rocket} alt="Rocket"  className="landingRocket" />

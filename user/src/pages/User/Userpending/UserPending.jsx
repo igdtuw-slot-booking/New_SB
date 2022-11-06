@@ -1,20 +1,24 @@
 import React from 'react';
+
+import Navbar from "../../../components/Navbar/Navbar.jsx";
+import Sidebar from "../../../components/UserSidebar/Sidebar.jsx";
+import UserDataBox from "../component/UserdataBox.jsx";
 import "../../../components/Table/Table.css";
 import useFetch from "../../../Hooks/useFetch.js";
 import {Link} from "react-router-dom";
 import { DataGrid } from '@mui/x-data-grid';
 import { userColumns } from '../../../datatablesource.js';
 
-import Admin from "../../../components/Admin/Admin.jsx";
+export default function UserPending() {
 
-export default function Adminpending() {
+    const {data,loading,error} = useFetch("/event?status=Pending");
 
-  const {data,loading,error} = useFetch("/event?status=Pending");
-console.log(data);
   return (
     <div>
-        <Admin/>
+        <Navbar/>
+        <Sidebar/>
 
+{/* 
         <div style={{ height: 400, width: '100%' }} className="Table-admin">
       <div style={{ display: 'flex', height: '100%' }}>
         <div style={{ flexGrow: 1 }}>
@@ -51,6 +55,9 @@ console.log(data);
         </div>
       </div>
     </div>
+*/}
+
+    <UserDataBox/>
     </div>
   )
 }
