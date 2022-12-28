@@ -5,16 +5,16 @@ const VenueSchema = new mongoose.Schema({
     name:{
         type: String,
         required: true,
-        unique: true
+        unique: [true, "Enter Venue"]
     },
     room_no:{
         type: String,
         required: true,
-        unique: true
+        unique: [true, "Enter Room no."]
     },
     location:{
         type: String,
-        required: true
+        required: [true, "Enter Venue Location"]
     },
     capacity:{
         type: Number
@@ -22,9 +22,18 @@ const VenueSchema = new mongoose.Schema({
     facilities:{
         type: [String]
     },
-    photos:{
-        type: Array
-    }
+    images:[
+        {
+            public_id:{
+                type:String,
+                required:true
+            },
+            url:{
+                type:String,
+                required:true
+            }
+        }
+    ]
     
 }
 );

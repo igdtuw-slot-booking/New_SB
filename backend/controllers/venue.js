@@ -1,4 +1,5 @@
 import Venue from "../models/Venue.js"
+import ApiFeatures from "../utils/apifeatures.js";
 
 export const createVenue = async (req,res,next)=>{
     const newVenue = new Venue(req.body)
@@ -38,8 +39,9 @@ export const getVenue = async (req,res,next)=>{
 };
 
 export const getallVenue = async (req,res,next)=>{
+    const apiFeatures = new ApiFeatures(Venue.find(),req.query).search().filter();
     try{
-        const venue = await Venue.find();
+        const venue = await apiFeatures.query;
         res.status(200).json(venue);
     } catch(err){
         next(err);

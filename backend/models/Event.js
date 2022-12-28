@@ -4,11 +4,11 @@ const EventSchema = new mongoose.Schema({
 
     society:{
         type: String,
-        required: true
+        required: [true, "Enter name of the organisation/society"]
     },
     eventDesc:{
         type: String,
-        required: true
+        required: [true, "Enter event details"]
     },
     date:{
         type: String,
@@ -24,7 +24,7 @@ const EventSchema = new mongoose.Schema({
     },
     issuer:{
         type: String,
-        required: true
+        required: [true, "Enter name of the issuer"]
     },
     document:{
         type: String               //documents ka type ekk baar check kar lena
@@ -34,11 +34,23 @@ const EventSchema = new mongoose.Schema({
     },
     status:{
         type: String,
-        default: "Pending"
+        default: "Pending",
+        required:true,
     },
     venue:{
-        type:[],
-        required: true
+        type:mongoose.Schema.ObjectId,
+        ref: "Venue",
+        required: [true, "Enter Venue"]
+    },
+    reviewedAt: Date,
+    bookedAt:{
+        type:Date,
+        default:Date.now
+    },
+    user:{
+        type:mongoose.Schema.ObjectId,
+        ref: "User",
+        required:true,
     }
     
 });

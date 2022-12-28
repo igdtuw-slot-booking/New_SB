@@ -1,5 +1,6 @@
 import express from "express";
 import { createVenue , updateVenue , deleteVenue , getVenue , getallVenue } from "../controllers/venue.js";
+import { verifyUser } from "../utils/verifyToken.js";
 //import { verifyUser, verifyAdmin } from "../utils/verifyToken.js";         //use verifyadmin verifyuser from verifyToken.js as per the requirement ---like kis function ke liye kya verification needed hai
 
 const router = express.Router();
@@ -14,10 +15,10 @@ router.put("/:id", updateVenue);
 router.delete("/:id", deleteVenue );
 
 //GET
-router.get("/:id", getVenue);
+router.get("/:id", verifyUser, getVenue);
 
 //GETALL
-router.get("/", getallVenue);
+router.get("/", verifyUser, getallVenue);
 
 
 export default router

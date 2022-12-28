@@ -1,5 +1,8 @@
 import express from "express";
-import { updateUser , deleteUser , getUser , getallUser } from "../controllers/user.js"
+import { updateUser , deleteUser , getUser , getallUser, register, login, logout, forgotPassword, resetPassword } from "../controllers/user.js";
+import { verifyAdmin, verifyUser } from "../utils/verifyToken.js";
+//import { register, login} from "../controllers/auth.js";
+
 const router = express.Router();
 //import { verifyUser, verifyAdmin } from "../utils/verifyToken.js";         //use verifyadmin verifyuser from verifyToken.js as per the requirement ---like kis function ke liye kya verification needed hai
 
@@ -18,6 +21,9 @@ router.get("/checkadmin/:id", verifyAdmin, (req,res,next)=>{
 
 */
 
+router.post("/register", register,);
+router.post("/login", login);
+
 //UPADATE
 router.put("/:id", updateUser);
 
@@ -25,10 +31,20 @@ router.put("/:id", updateUser);
 router.delete("/:id", deleteUser );
 
 //GET
-router.get("/:id", getUser);
+router.get("/i", verifyUser, getUser);
 
 //GETALL
 router.get("/", getallUser);
+
+//LogOut
+router.get("/logout", logout);
+
+//Forgot Password
+router.post("/password/forgot", forgotPassword);
+
+//ResetPassword
+router.put("/password/reset/:token", resetPassword);
+
 
 
 export default router
