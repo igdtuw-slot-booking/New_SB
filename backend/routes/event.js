@@ -7,11 +7,11 @@ const router = express.Router();
 //CREATE
 router.post("/", verifyUser, createEvent);
 
-//UPADATE
-router.put("/:id", verifyUser, updateEvent);
+//UPADATE EVENT STATUS --by admin
+router.put("/:id", verifyAdmin, updateEvent);
 
-//DELETE
-router.delete("/:id", verifyUser, deleteEvent );
+//DECLINE EVENT --by admin
+//router.delete("/:id", verifyAdmin, deleteEvent );
 
 //GET LOGGED IN USER EVENTS
 router.get("/find/me", verifyUser, myEvents);
