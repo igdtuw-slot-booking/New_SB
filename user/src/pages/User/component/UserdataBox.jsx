@@ -1,5 +1,7 @@
+import { boxSizing } from '@mui/system';
 import React from 'react';
 import useFetch from "../../../Hooks/useFetch.js";
+import "./UserdataBox.css"
 
 export default function UserdataBox() {
 
@@ -7,25 +9,27 @@ export default function UserdataBox() {
 
 console.log(data);
   return (
-    <div>
+    <div >
         {loading ? ( "Loading" 
         ) : ( 
         <>
-        <div className='container'>
+        <div className='user-container'>
             <div className='row'>
                 <div className='col'>
                     <h5>Total Bookings</h5>
                 </div>
-                <div className='col'>
+                <div style={{ textAlign: 'left' , width:'10%', boxSizing:'content-box'}} className='col' >
                     <h5>{(data[0]+data[1]+data[2]+data[3])}</h5>
                 </div>
             
             </div>
+            <div classname='Userbookingdata'>
+
             <div className='row'>
                 <div className='col'>
                     <h5>Confirmed Bookings</h5>
                 </div>
-                <div className='col'>
+                <div style={{ textAlign: 'right' }} className='col'>
                     <h5>{data[1]}</h5>
                 </div>
             </div>
@@ -33,7 +37,7 @@ console.log(data);
                 <div className='col'>
                     <h5>Cancelled by Admin</h5>
                 </div>
-                <div className='col'>
+                <div style={{ textAlign: 'right' }} className='col'>
                     <h5>{data[2]}</h5>
                 </div>
             </div>
@@ -41,9 +45,10 @@ console.log(data);
                 <div className='col'>
                     <h5>Cancelled by User</h5>
                 </div> 
-                <div className='col'>
+                <div style={{ textAlign: 'right' }} className='col'>
                     <h5>{data[3]}</h5>
                 </div>
+            </div>
             </div>
            
         </div>
