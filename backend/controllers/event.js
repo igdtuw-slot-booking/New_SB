@@ -100,7 +100,7 @@ export const myEvents = async (req,res,next)=>{
     //console.log(req.user.id);
     const apiFeatures = new ApiFeatures(Event.find({ user: req.user.id }),req.query).filter();
     try{
-        const events = await apiFeatures.query;
+        const events = await (apiFeatures.query).populate("venue");
         
         res.status(200).json(events);
     } catch(err){
@@ -111,7 +111,7 @@ export const myEvents = async (req,res,next)=>{
 export const getallEvent = async (req,res,next)=>{
     const apiFeatures = new ApiFeatures(Event.find(),req.query).filter();
     try{
-        const events = await apiFeatures.query;
+        const events = await (apiFeatures.query).populate("venue").populate("user");
         res.status(200).json(events);
     } catch(err){
         next(err);
