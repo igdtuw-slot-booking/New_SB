@@ -9,13 +9,13 @@ function NavBar() {
                 {/* <ul> */}
                     <MDBRow>
                         <MDBCol>
-                   HOME
+                       <a href='/'>HOME</a>
                         </MDBCol>
                         <MDBCol>
-                       ABOUT     
+                        <a href='#'>ABOUT</a>  
                         </MDBCol>
                         <MDBCol>
-                            TEAM
+                        <a href='#'>TEAM</a>
                         </MDBCol>
                     </MDBRow>
                    {/* <li>HOME </li> 

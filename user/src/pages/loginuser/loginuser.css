@@ -113,11 +113,23 @@
 }
 .login_page_buttoncontainer{
     display: flex;
+    cursor:pointer;
     justify-content:center;
     align-items: center;
     gap:10px;
     width: 120%;
     height:24%;
+}
+.login_page_buttoncontainer a{
+    display:flex;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:white;
+    background: #24014E;
+    border-radius: 50px;
+    width: 50%;
+    height:60%;
+    font-size:20px;
 }
 .login_page_Register{
           display:flex;

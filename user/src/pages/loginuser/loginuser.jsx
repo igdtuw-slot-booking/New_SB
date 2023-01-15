@@ -13,7 +13,7 @@ function App() {
   <div className="login_page_content">
     <h1 className="login_page_text">Are you</h1>
     <h1 className="login_page_text">an Admin?</h1>
-    <button className="login_page_admin">Admin Login</button>
+    <button className="login_page_admin"><a href='/loginAdmin'>Admin Login</a></button>
   </div>
 </div>
 <div>
@@ -30,9 +30,7 @@ function App() {
   </div>
   <HorizontalRule />
   <div className="login_page_Register">Register Here</div>
-  <div className="login_page_buttoncontainer">
-    <Button content="Sign Up" />
-  </div>
+  <div className="login_page_buttoncontainer">Sign up</div>
 </div>
 </div>
     </div>  
