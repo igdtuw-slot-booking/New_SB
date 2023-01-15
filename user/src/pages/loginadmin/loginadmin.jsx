@@ -11,7 +11,7 @@ function App() {
   <div className="admin_page_content">
     <h1 className="admin_page_text">Are you</h1>
     <h1 className="admin_page_text">a Student?</h1>
-    <button className="admin_page_admin">Student Login</button>
+    <button className="admin_page_admin"><a href='/loginuser'>Student Login</a></button>
   </div>
 </div>
 <div>

@@ -33,7 +33,7 @@ function App() {
   <div className="reg_page_Register">Already Have an Account?</div>
   
   <div className="reg_page_buttoncontainer">
-    <Button content="Sign Up" />
+   <a href='#'><Button content="Sign Up" /></a>
   </div>
 </div>
 </div>
@@ -44,7 +44,7 @@ function App() {
 const HorizontalRule = styled.hr`
          position:relative;
          width:90%;
-        height:0.7rem;
+         height:0.7rem;
          border-radius:black;
          background:#24014E;
          margin-bottom:0px;

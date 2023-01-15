@@ -11,8 +11,8 @@ function Content() {
                      <h2 className='landinglogin'>Login as:</h2>
                 </div>
                 <div className="landingButtons">
-                    <button className='landingAdmin'>Admin</button>
-                    <button className='landingStudent'>Student</button>
+                    <button className='landingAdmin'><a href='/loginAdmin'>Admin</a></button>
+                    <button className='landingStudent'><a href='/loginuser'>Student</a></button>
                 </div>
                 <figure>
                     <img src={Rocket} alt="Rocket"  className="landingRocket" />

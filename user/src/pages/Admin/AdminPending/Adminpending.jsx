@@ -16,7 +16,7 @@ import Admin from "../../../components/Admin/Admin.jsx";
 export default function Adminpending() {
 
   const {data,loading,error} = useFetch("/event?status=Pending");
-  console.log(data);
+console.log(data);
   return (
     <div>
         <Admin/>

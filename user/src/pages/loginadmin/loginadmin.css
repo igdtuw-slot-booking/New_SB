@@ -66,6 +66,14 @@ flex: none;
 order: 1;
 flex-grow: 0;
 }
+.admin_page_admin a{
+    text-decoration: none;
+    color:white;
+background: #24014E;
+border-radius: 50px;
+font-size: x-large;
+
+}
 .admin_page_Maincontent{
             box-sizing:border-box;
             display:flex;

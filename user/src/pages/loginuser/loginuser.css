@@ -62,6 +62,13 @@
      order: 1;
      flex-grow: 0;
 }
+.login_page_admin a{
+    text-decoration:none;
+    color:white;
+    background: #24014E;
+    border-radius: 50px;
+    font-size: x-large;
+}
 .login_page_Maincontent{
             box-sizing:border-box;
             display:flex;
@@ -113,11 +120,23 @@
 }
 .login_page_buttoncontainer{
     display: flex;
+    cursor:pointer;
     justify-content:center;
     align-items: center;
     gap:10px;
     width: 120%;
     height:24%;
+}
+.login_page_buttoncontainer a{
+    display:flex;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:white;
+    background: #24014E;
+    border-radius: 50px;
+    width: 50%;
+    height:60%;
+    font-size:20px;
 }
 .login_page_Register{
           display:flex;
