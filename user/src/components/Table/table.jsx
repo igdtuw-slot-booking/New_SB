@@ -12,7 +12,7 @@ export default function Table() {
 
   return (
 
-    <div style={{ height: 400, width: '100%' }} className="Table-admin">
+    <div style={{ height: 400 }} className="Table-admin">
       <div style={{ display: 'flex', height: '100%' }}>
         <div style={{ flexGrow: 1 }}>
             <MDBRow>
@@ -29,6 +29,9 @@ export default function Table() {
                         </li>
                         <li>
                             <h6>Approved</h6>
+                        </li>
+                        <li>
+                            <h6>Declined</h6>
                         </li>
                         <li>
                             <h6>Declined</h6>

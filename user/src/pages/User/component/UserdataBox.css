@@ -1,0 +1,19 @@
+.user-container{
+    width: 40%;
+    /* position: sticky; */
+        margin-left:1%;
+        margin-top: 22%;
+        margin-right: 35%;
+        padding:20px 7vh;
+        text-align: left;
+        background: #ffffff;
+        color:rgb(0, 0, 0);
+        height:fit-content;
+        top:30%;
+        border-radius: 10px;
+        box-sizing: border-box;
+        display: block;
+}
+.col{
+    width: 2rem;
+}
