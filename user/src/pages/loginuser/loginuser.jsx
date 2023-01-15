@@ -2,9 +2,21 @@ import styled from "styled-components";
 import Input from "../../pages/loginuser/Input";
 import Button from "../../pages/loginuser/Button";
 import '../../pages/loginuser/loginuser.css';
+import React, {useState} from "react";
+import {useDispatch} from "react-redux";
+import {Link} from "react-dom";
+import { loginUser } from "../../Actions/User";
 
 
 function App() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const dispatch = useDispatch();
+
+  const loginHandler = (e) => {
+    e.preventDefault();
+    dispatch(loginUser(email, password))
+  };
 
   return (
     <div className="login_page_student">
@@ -16,22 +28,25 @@ function App() {
     <button className="login_page_admin"><a href='/loginAdmin'>Admin Login</a></button>
   </div>
 </div>
+
 <div>
-<div className="login_page_Maincontent">
+  <form onSubmit={loginHandler}>
+  <div className="login_page_Maincontent">
   <div className="login_page_Helloadmin">Hello Student!!</div>
   <div className="login_page_InputContainer">
-    <Input type="text" placeholder="Email" />
-    <Input type="password" placeholder="Password" />
+    <Input type="text" placeholder="Email" required value={email} onChange={(e) => setEmail(e.target.value)}/>
+    <Input type="password" placeholder="Password" required value={password} onChange={(e) => setPassword(e.target.value)} />
     
   </div>
   <div className="login_page_Forgotpassword">forgot password?</div>
   <div className="login_page_buttoncontainer">
-    <Button content="Login" />
+    <Button content="Login" type="submit" />
   </div>
   <HorizontalRule />
   <div className="login_page_Register">Register Here</div>
   <div className="login_page_buttoncontainer">Sign up</div>
 </div>
+</form>
 </div>
     </div>  
 
