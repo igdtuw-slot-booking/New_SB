@@ -1,13 +1,14 @@
 import { boxSizing } from '@mui/system';
 import React from 'react';
-import useFetch from "../../../Hooks/useFetch.js";
+//import useFetch from "../../../Hooks/useFetch.js";
 import "./UserdataBox.css"
 
 export default function UserdataBox() {
 
-    const { data, loading, error } = useFetch("/event/countByStatus?status=Pending,Approved,Declined,Cancelled")
-
-console.log(data);
+//     const { data, loading, error } = useFetch("/event/countByStatus?status=Pending,Approved,Declined,Cancelled")
+const data=[5,8,2,6];
+const loading = false;
+// console.log(data);
   return (
     <div >
         {loading ? ( "Loading" 
