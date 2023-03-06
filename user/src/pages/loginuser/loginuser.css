@@ -107,7 +107,7 @@
     border-radius: 50px;
 }
 
-.login_page_Forgotpassword{
+.login_page_Forgotpassword p{
              margin:2rem;
              cursor :pointer;  
              align-items:center;
@@ -119,10 +119,17 @@
              margin-bottom:8px;
 }
 .login_page_buttoncontainer{
-    display: flex;
+    display:inline-flex;
     cursor:pointer;
     justify-content:center;
-    align-items: center;
+    gap:10px;
+    width: 120%;
+    height:24%;
+}
+.login_page_buttoncontainer p{
+    display:inline-flex;
+    cursor:pointer;
+    justify-content:center;
     gap:10px;
     width: 120%;
     height:24%;
