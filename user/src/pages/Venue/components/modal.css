@@ -1,0 +1,88 @@
+.modal-container-venue {
+    width: 80%;
+    height: 100%;
+  }
+  
+  .modal-header-venue {
+    background-color: #E6E4ED;
+    color: rgb(0, 0, 0);
+  }
+  
+  .modal-title-venue {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 36px;
+    text-align: center;
+    color: #24014E;
+    
+  }
+  
+  .modal-body-venue {
+    background-color: #E6E4ED;
+    height: 83vh;
+  }
+  
+  .slider-image-venue {
+    height: 30%;
+    width: 50%;
+    object-fit: cover;
+  }
+  
+  .modal-footer-venue {
+    background-color: #E6E4ED;
+
+    justify-content: center;
+
+  }
+  .modalbtnvenue{
+    background-color: #24014E;
+    color: white;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 5px;
+    width: 40%;
+    height: 100%;
+    border: none;
+  }
+  .modal-header-venue .close {
+    color: #fff;
+    font-size: 1.5rem;
+    opacity: 1;
+  }
+  
+  .facility-oval {
+    width: 5rem;
+    height: 2.5rem;
+    border-radius: 20%;
+    background-color: #24014E;
+    justify-content: space-evenly;
+    text-align: center;
+    color: white;
+    
+    
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9px;
+
+  }
+  .facilities-container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 9%;
+    justify-content: space-evenly;
+  }
+  

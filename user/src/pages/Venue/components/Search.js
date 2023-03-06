@@ -5,8 +5,8 @@ import Form from 'react-bootstrap/Form'
 import Cards from './Cards'
 import Button from 'react-bootstrap/Button';
 import Set from './Set';
-import Nav from "../../../components/Navbar/Navbar.jsx"
-//import Nav from 'user/src/components/Navbar/Navbar.jsx';
+import Nav from "../../../components/NavbarVenue/Navbar.jsx"
+import Sidebar from '../../../components/UserSidebar/Sidebar.jsx';
 import { MDBRow, MDBCol } from 'mdb-react-ui-kit';
 
 const Search = () => {
@@ -91,7 +91,7 @@ const Search = () => {
 
             <MDBRow>
                 <MDBCol md='2' className="side_nav d-flex align-items-center">
-                    
+                    <Sidebar />
                 </MDBCol>
                 <MDBCol md='10'>
                     <section className='iteam_section mt-4 container'>
