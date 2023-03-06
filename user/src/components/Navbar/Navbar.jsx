@@ -3,6 +3,7 @@ import "./Navbar.css";
 import DropdownItem from "./DropdownItem.jsx";
 import logo from './Image/Logo.png';
 import cb from './Image/cb.png';
+import cblogo from './Image/cb.png';
 import admin from './Image/admin.png';
 import { MDBRow, MDBCol } from 'mdb-react-ui-kit';
 import toast from "react-hot-toast";
@@ -53,10 +54,13 @@ export default function Navbar() {
         <div class="nav-container-fluid">
             <MDBRow>
                 <MDBCol>
-                <img src={logo} className="nav-logo" alt=""/>
+                 
+                 <img src={cb} className="nav-cb" alt=""/>
+                 
                 </MDBCol>
                 <MDBCol>
-                <img src={cb} className="nav-cb" alt=""/>
+                <img src={logo} className="nav-logo" alt=""/> 
+                
                 </MDBCol>
                 <MDBCol>
                 <div className='menu-containered'>
