@@ -3,15 +3,16 @@ import React from 'react';
 import Navbar from "../../../components/Navbar/Navbar.jsx";
 import Sidebar from "../../../components/UserSidebar/Sidebar.jsx";
 import "../../../components/Table-user/Table-user.css";
-import useFetch from "../../../Hooks/useFetch.js";
+//import useFetch from "../../../Hooks/useFetch.js";
 import {Link} from "react-router-dom";
 import { DataGrid } from '@mui/x-data-grid';
 import { userColumns } from '../../../datatablesource.js';
 
 export default function UserDeclined() {
 
-    const {data,loading,error} = useFetch("/event?status=Declined");
-
+    //const {data,loading,error} = useFetch("/event?status=Declined");
+    const data=[5,8,2,6];
+    const loading = false;
   return (
     <div>
         <Navbar/>

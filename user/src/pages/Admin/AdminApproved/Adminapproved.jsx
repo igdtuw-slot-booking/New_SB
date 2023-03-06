@@ -1,6 +1,6 @@
 import React from 'react';
 import "../../../components/Table/Table.css";
-import useFetch from "../../../Hooks/useFetch.js";
+//import useFetch from "../../../Hooks/useFetch.js";
 import { Link } from "react-router-dom";
 import { DataGrid } from '@mui/x-data-grid';
 import { userColumns } from '../../../datatablesource.js';
@@ -9,8 +9,9 @@ import Admin from "../../../components/Admin/Admin.jsx";
 
 export default function Adminpending() {
 
-  const {data,loading,error} = useFetch("/event?status=Approved");
-  
+  //const {data,loading,error} = useFetch("/event?status=Approved");
+  const data=[5,8,2,6];
+const loading = false;
 
   return (
     <div>

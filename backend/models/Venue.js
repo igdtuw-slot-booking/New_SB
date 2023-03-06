@@ -22,7 +22,7 @@ const VenueSchema = new mongoose.Schema({
     facilities:{
         type: [String]
     },
-    images:[
+    image:[
         {
             public_id:{
                 type:String,

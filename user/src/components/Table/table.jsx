@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Table.css";
-import useFetch from "../../Hooks/useFetch.js"
+//import useFetch from "../../Hooks/useFetch.js"
 import { MDBRow, MDBCol } from 'mdb-react-ui-kit';
 import { DataGrid } from '@mui/x-data-grid';
 import { userColumns } from '../../datatablesource';
@@ -8,8 +8,9 @@ import { userColumns } from '../../datatablesource';
 
 export default function Table() {
 
-    const {data,loading,error} = useFetch("/event?status=Approved");
-
+    //const {data,loading,error} = useFetch("/event?status=Approved");
+    const data=[5,8,2,6];
+    const loading = false;
   return (
 
     <div style={{ height: 400 }} className="Table-admin">
