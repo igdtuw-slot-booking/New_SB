@@ -24,23 +24,21 @@ const EventSchema = new mongoose.Schema({
     },
     issuer:{
         type: String,
-        required: [true, "Enter name of the issuer"]
     },
     document:{
         type: String               //documents ka type ekk baar check kar lena
     },
     euipment:{
-        type: [String]             // isse bhi review kar lena uss video se.. actually iska data enetr karne pe bhi show nhi vo raha jab mane api test kiya tha
+        type: [String]           
     },
     status:{
         type: String,
         default: "Pending",
-        required:true,
     },
     venue:{
         type:mongoose.Schema.ObjectId,
         ref: "Venue",
-        required: [true, "Enter Venue"]
+        required: true
     },
     reviewedAt: Date,
     bookedAt:{
@@ -50,7 +48,6 @@ const EventSchema = new mongoose.Schema({
     user:{
         type:mongoose.Schema.ObjectId,
         ref: "User",
-        required:true,
     }
     
 });

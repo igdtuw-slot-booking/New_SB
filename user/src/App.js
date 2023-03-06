@@ -19,25 +19,24 @@ import Calender from "./pages/Calender/Calender.jsx";
 import { Routes, Route } from "react-router-dom";
 
 
+
 export default function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={ <LandingPage/> } />                                    
-        <Route path="/home" element={ <LandingPage/> } /> 
-        <Route path="loginadmin" element={<LoginAdmin/>}/>  
-        <Route path='loginuser' element={<LoginUser/>}/>   
-        <Route path="registeradmin" element={<RegisterAdmin/>}/>  
-        <Route path='registeruser' element={<RegisterUser/>}/>  
-        <Route path='admin/:userId' element={<Pending/>}/>  
-        <Route path='admin/:userId/approved' element={<Approved/>}/>    
-        <Route path='admin/:userId/declined' element={<Declined/>}/>    
-        <Route path="user/:userId" element={<UserPending/>}/>
-        <Route path="user/:userId/approved" element={<UserApproved/>}/>
-        <Route path="user/:userId/declined" element={<UserDeclined/>}/>
-        <Route path="user/:userId/cancelled" element={<UserCancelled/>}/>   
-        <Route path="user/:userId/venue" element={<Venue/>}/>  
-        <Route path="user/:userId/calender" element={<Calender/>}/>   
+        <Route path="/" element={ <LandingPage/> } />                                     
+        <Route path="/loginadmin" element={<LoginAdmin/>}/>  
+        <Route path='/loginuser' element={<LoginUser/>}/>    
+        <Route path='/registeruser' element={<RegisterUser/>}/>  
+        <Route path='/admin' element={<Pending/>}/>  
+        <Route path='/admin/approved' element={<Approved/>}/>    
+        <Route path='/admin/:userId/declined' element={<Declined/>}/>    
+        <Route path="/user" element={<UserPending/>}/>
+        <Route path="/user/:userId/approved" element={<UserApproved/>}/>
+        <Route path="/user/:userId/declined" element={<UserDeclined/>}/>
+        <Route path="/user/:userId/cancelled" element={<UserCancelled/>}/>   
+        <Route path="/user/:userId/venue" element={<Venue/>}/>  
+        <Route path="/user/:userId/calender" element={<Calender/>}/>   
       </Routes>
     </div>
   )

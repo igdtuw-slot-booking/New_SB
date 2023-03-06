@@ -1,43 +1,27 @@
 import express from "express";
-import { updateUser , deleteUser , getUser , getallUser, register, login, logout, forgotPassword, resetPassword } from "../controllers/user.js";
-import { verifyAdmin, verifyToken, verifyUser } from "../utils/verifyToken.js";
-//import { register, login} from "../controllers/auth.js";
+import { updatePassword, updateProfile , getMyEvent , getAllUsers, register, login,loginAdmin, whoami, logout, forgotPassword, resetPassword } from "../controllers/user.js";
+import {  isAuthenticated, verifyAdmin } from "../utils/verifyToken.js";
+
 
 const router = express.Router();
-//import { verifyUser, verifyAdmin } from "../utils/verifyToken.js";         //use verifyadmin verifyuser from verifyToken.js as per the requirement ---like kis function ke liye kya verification needed hai
 
-/*
-router.get("/checkauth", verifyToken, (req,res,next)=>{
-    res.send("hello user you are logged in");
-});
+router.post("/register", register);
 
-router.get("/checkuser/:id", verifyUser, (req,res,next)=>{
-    res.send("hello user you are logged in and can delete your account");
-});
-
-router.get("/checkadmin/:id", verifyAdmin, (req,res,next)=>{
-    res.send("hello user you are logged in and can delete all account");
-});
-
-*/
-
-router.post("/register", register,);
 router.post("/login", login);
 
-//UPADATE
-router.put("/:id", updateUser);
+router.post("/login/admin", loginAdmin);
 
-//DELETE
-router.delete("/:id", deleteUser );
+router.get("/whoami", whoami);
 
-//GET
-router.get("/i", verifyUser, getUser);
-
-//GETALL
-router.get("/", getallUser);
-
-//LogOut
 router.get("/logout", logout);
+
+router.put("/update/password", isAuthenticated, updatePassword);
+
+router.put("/update/profile", isAuthenticated, updateProfile);
+
+router.get("/users", getAllUsers);
+
+router.get("/myevent", isAuthenticated, getMyEvent);
 
 //Forgot Password
 router.post("/password/forgot", forgotPassword);
@@ -45,11 +29,6 @@ router.post("/password/forgot", forgotPassword);
 //ResetPassword
 router.put("/password/reset/:token", resetPassword);
 
-
-//demo
-//router.get("/check/:id", verifyAdmin, (req,res,next) => {
-//    res.send("hello admin..u");
-//})
 
 
 export default router
