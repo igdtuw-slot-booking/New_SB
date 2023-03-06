@@ -4,12 +4,17 @@ const Venuedata = [
         rname: "Auditorium",
         imgdata: "https://res.cloudinary.com/dgl4djgba/image/upload/v1667108449/cld-sample-2.jpg",
         address: "Main Gate, IGDTUW",
-        delimg: "",
         somedata: "Can house upto 1000 people",
-        price: "",
-        rating: "",
-        arrimg: ""
-    },
+        roomNumber: "Room 303",
+        location: "3rd Floor",
+        capacity: "50 people",
+        images: [
+            "https://res.cloudinary.com/dgl4djgba/image/upload/v1667108449/cld-sample-2.jpg",
+            "https://res.cloudinary.com/dgl4djgba/image/upload/v1667108449/cld-sample-2.jpg",
+            "https://res.cloudinary.com/dgl4djgba/image/upload/v1667108449/cld-sample-2.jpg"
+            ],
+            facilities: ["Projector", "Air conditioning", "Wi-Fi", "Sound system"]
+        }  ,
     {
         id: 2,
         rname: "Classroom",
@@ -17,64 +22,100 @@ const Venuedata = [
         address: "Main Gate, IGDTUW",
         delimg: "",
         somedata: "Can house upto 1000 people",
-        price: "",
-        rating: "",
-        arrimg: ""
+        roomNumber: "Room 303",
+        location: "3rd Floor",
+        capacity: "50 people",
+        images: [
+            "https://res.cloudinary.com/dgl4djgba/image/upload/v1667108449/cld-sample-2.jpg",
+            "https://res.cloudinary.com/dgl4djgba/image/upload/v1667108449/cld-sample-2.jpg",
+            "https://res.cloudinary.com/dgl4djgba/image/upload/v1667108449/cld-sample-2.jpg"
+            ],
+            facilities: ["Projector", "Air conditioning", "Wi-Fi", "Sound system"]
     },
     {
         id: 3,
         rname: "Seminar Hall",
         imgdata: "https://drive.google.com/uc?export=view&id=10aZQDxsJ7YhlJBVzCEE1xCSQlGsOLl5W",
-        address: "Main Gate, IGDTUW",
+        address: "CSE Dept, IGDTUW",
         delimg: "",
         somedata: "Can house upto 1000 people",
-        price: "",
-        rating: "",
-        arrimg: ""
+        roomNumber: "Room 303",
+        location: "3rd Floor",
+        capacity: "50 people",
+        images: [
+            "https://res.cloudinary.com/dgl4djgba/image/upload/v1667108449/cld-sample-2.jpg",
+            "https://res.cloudinary.com/dgl4djgba/image/upload/v1667108449/cld-sample-2.jpg",
+            "https://res.cloudinary.com/dgl4djgba/image/upload/v1667108449/cld-sample-2.jpg"
+            ],
+            facilities: ["Projector", "Air conditioning", "Wi-Fi", "Sound system"]
     },
     {
         id: 4,
         rname: "E-213",
         imgdata: "https://drive.google.com/uc?export=view&id=10aZQDxsJ7YhlJBVzCEE1xCSQlGsOLl5W",
-        address: "Main Gate, IGDTUW",
+        address: "ECE Dept, IGDTUW",
         delimg: "",
         somedata: "Can house upto 1000 people",
-        price: "",
-        rating: "",
-        arrimg: ""
+        roomNumber: "Room 303",
+        location: "3rd Floor",
+        capacity: "50 people",
+        images: [
+            "https://res.cloudinary.com/dgl4djgba/image/upload/v1667108449/cld-sample-2.jpg",
+            "https://res.cloudinary.com/dgl4djgba/image/upload/v1667108449/cld-sample-2.jpg",
+            "https://res.cloudinary.com/dgl4djgba/image/upload/v1667108449/cld-sample-2.jpg"
+            ],
+            facilities: ["Projector", "Air conditioning", "Wi-Fi", "Sound system"]
     },
     {
         id: 5,
         rname: "E-214",
         imgdata: "https://drive.google.com/uc?export=view&id=10aZQDxsJ7YhlJBVzCEE1xCSQlGsOLl5W",
-        address: "Main Gate, IGDTUW",
+        address: "ECE Dept, IGDTUW",
         delimg: "",
         somedata: "Can house upto 1000 people",
-        price: "",
-        rating: "",
-        arrimg: ""
+        roomNumber: "Room 303",
+        location: "3rd Floor",
+        capacity: "50 people",
+        images: [
+            "https://res.cloudinary.com/dgl4djgba/image/upload/v1667108449/cld-sample-2.jpg",
+            "https://res.cloudinary.com/dgl4djgba/image/upload/v1667108449/cld-sample-2.jpg",
+            "https://res.cloudinary.com/dgl4djgba/image/upload/v1667108449/cld-sample-2.jpg"
+            ],
+            facilities: ["Projector", "Air conditioning", "Wi-Fi", "Sound system"]
     },
     {
         id: 6,
-        rname: "E-315",
+        rname: "IT-405",
         imgdata: "https://drive.google.com/uc?export=view&id=10aZQDxsJ7YhlJBVzCEE1xCSQlGsOLl5W",
-        address: "Main Gate, IGDTUW",
+        address: "IT Dept, IGDTUW",
         delimg: "",
         somedata: "Can house upto 1000 people",
-        price: "",
-        rating: "",
-        arrimg: ""
+        roomNumber: "Room 303",
+        location: "3rd Floor",
+        capacity: "50 people",
+        images: [
+            "https://res.cloudinary.com/dgl4djgba/image/upload/v1667108449/cld-sample-2.jpg",
+            "https://res.cloudinary.com/dgl4djgba/image/upload/v1667108449/cld-sample-2.jpg",
+            "https://res.cloudinary.com/dgl4djgba/image/upload/v1667108449/cld-sample-2.jpg"
+            ],
+            facilities: ["Projector", "Air conditioning", "Wi-Fi", "Sound system"]
     },
     {
         id: 7,
-        rname: "E-214",
+        rname: "M-214",
         imgdata: "https://drive.google.com/uc?export=view&id=10aZQDxsJ7YhlJBVzCEE1xCSQlGsOLl5W",
-        address: "Main Gate, IGDTUW",
+        address: "Mech Dept, IGDTUW",
         delimg: "",
         somedata: "Can house upto 1000 people",
-        price: "",
-        rating: "",
-        arrimg: ""
+        roomNumber: "Room 303",
+        location: "3rd Floor",
+        capacity: "50 people",
+        images: [
+            "https://res.cloudinary.com/dgl4djgba/image/upload/v1667108449/cld-sample-2.jpg",
+            "https://res.cloudinary.com/dgl4djgba/image/upload/v1667108449/cld-sample-2.jpg",
+            "https://res.cloudinary.com/dgl4djgba/image/upload/v1667108449/cld-sample-2.jpg"
+            ],
+            facilities: ["Projector", "Air conditioning", "Wi-Fi", "Sound system"]
     },
     {
         id: 8,
@@ -83,9 +124,15 @@ const Venuedata = [
         address: "Main Gate, IGDTUW",
         delimg: "",
         somedata: "Can house upto 1000 people",
-        price: "",
-        rating: "",
-        arrimg: ""
+        roomNumber: "Room 303",
+        location: "3rd Floor",
+        capacity: "50 people",
+        images: [
+            "https://res.cloudinary.com/dgl4djgba/image/upload/v1667108449/cld-sample-2.jpg",
+            "https://res.cloudinary.com/dgl4djgba/image/upload/v1667108449/cld-sample-2.jpg",
+            "https://res.cloudinary.com/dgl4djgba/image/upload/v1667108449/cld-sample-2.jpg"
+            ],
+            facilities: ["Projector", "Air conditioning", "Wi-Fi", "Sound system"]
     },
    
 ];

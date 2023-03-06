@@ -1,0 +1,89 @@
+.navbar-venue {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+  }
+  
+  .navbar-brand-venue {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .logoimg-venue {
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  .brand-name-venue {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .navbar-right-venue {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  
+  .user-profile-pic-venue {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+  }
+  
+  .username-venue {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  
+  .user-dropdown-venue {
+    display: flex;
+    align-items: center;
+  }
+  
+  @media (max-width: 576px) {
+    .navbar-brand-venue {
+      display: none;
+    }
+    .user-dropdown-venue {
+      display: block;
+      text-align: right;
+    }
+    .user-profile-pic-venue {
+      margin: 0;
+    }
+  }
+  
+              
+    .dropdown-item-venue:hover {
+        background-color: #f2f2f2;
+        cursor: pointer;
+        }
+    .dropdown-toggle-venue i {
+    font-size: 20px;
+    color: #333;
+    }
+    
+    @media (max-width: 767px) {
+    .navbar-brand-venue {
+    display: none;
+    }
+    
+    .user-profile-pic-venue,
+    .username-venue,
+    .dropdown-toggle-venue {
+    display: inline-block;
+    }
+    }
+    
+    .user-profile-pic-venue {
+    border-radius: 50%;
+    }
