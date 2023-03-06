@@ -112,7 +112,7 @@ font-size: x-large;
     border-radius: 50px;
 }
 
-.admin_page_Forgotpassword{
+.admin_page_Forgotpassword p{
              margin:2rem;
              cursor :pointer;  
              align-items:center;
@@ -121,15 +121,17 @@ font-size: x-large;
              font-weight: bold;
              font-size: large;
              margin-top:50px;
+             text-decoration: none;
 }
-.admin_page_buttoncontainer{
+.admin_page_buttoncontainer button{
     display: flex;
     justify-content:center;
     align-items: center;
-    color:#390479;
+    color:white;
+    background-color:#390479;
     gap:10px;
     width: 120%;
-    height:24%;
+    height:100%;
 }
 .admin_page_Register{
           display:flex;

@@ -100,7 +100,7 @@
     border-radius: 50px;
 }
 
-.reg_page_Forgotpassword{
+.reg_page_Forgotpassword p{
              margin:2rem;
              cursor :pointer;  
              align-items:center;
@@ -118,6 +118,21 @@
     gap:10px;
     width: 120%;
     height:24%;
+}
+.reg_page_buttoncontainer p{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color:#24014E;
+    color:#FCFCFC;
+    gap:10px;
+    width: 100%;
+    height:40%;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5%;
 }
 .reg_page_Register{
           display:flex;
