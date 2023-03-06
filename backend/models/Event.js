@@ -15,11 +15,11 @@ const EventSchema = new mongoose.Schema({
         required: false
     },
     time_Start:{
-        type: String,
+        type: Number,
         required: true
     },
     time_End:{
-        type: String,
+        type: Number,
         required: true
     },
     issuer:{

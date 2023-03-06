@@ -18,7 +18,7 @@ import Venue from "./pages/Venue/Venue.js";
 import Calender from "./pages/Calender/Calender.jsx";
 import { Routes, Route } from "react-router-dom";
 
-
+import Booking from "./pages/Booking/Booking.js";
 
 export default function App() {
   return (
@@ -32,11 +32,13 @@ export default function App() {
         <Route path='/admin/approved' element={<Approved/>}/>    
         <Route path='/admin/:userId/declined' element={<Declined/>}/>    
         <Route path="/user" element={<UserPending/>}/>
+        
         <Route path="/user/:userId/approved" element={<UserApproved/>}/>
         <Route path="/user/:userId/declined" element={<UserDeclined/>}/>
         <Route path="/user/:userId/cancelled" element={<UserCancelled/>}/>   
         <Route path="/user/:userId/venue" element={<Venue/>}/>  
         <Route path="/user/:userId/calender" element={<Calender/>}/>   
+        <Route path="/user/:userId/booking" element={<Booking/>}/>
       </Routes>
     </div>
   )
