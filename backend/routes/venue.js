@@ -1,5 +1,5 @@
 import express from "express";
-import { createVenue , updateVenue , deleteVenue , getVenue , getallVenue } from "../controllers/venue.js";
+import { createVenue , updateVenue , deleteVenue , getVenue , getAllVenue } from "../controllers/venue.js";
 import { isAuthenticated } from "../utils/verifyToken.js";
          //use verifyadmin verifyuser from verifyToken.js as per the requirement ---like kis function ke liye kya verification needed hai
 
@@ -18,7 +18,7 @@ router.delete("/:id", deleteVenue );
 router.get("/:id", isAuthenticated, getVenue);
 
 //GETALL
-router.get("/svenues", isAuthenticated, getallVenue);
+router.get("/", isAuthenticated, getAllVenue);
 
 
 export default router

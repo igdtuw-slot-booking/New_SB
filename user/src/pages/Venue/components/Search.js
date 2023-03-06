@@ -5,7 +5,8 @@ import Form from 'react-bootstrap/Form'
 import Cards from './Cards'
 import Button from 'react-bootstrap/Button';
 import Set from './Set';
-import Nav from "../../../components/NavbarVenue/Navbar.jsx"
+//import Nav from "../../../components/NavbarVenue/Navbar.jsx"
+import Nav from "../../../components/Navbar/Navbar.jsx"
 import Sidebar from '../../../components/UserSidebar/Sidebar.jsx';
 import { MDBRow, MDBCol } from 'mdb-react-ui-kit';
 
