@@ -2,6 +2,8 @@ import React from 'react';
 
 import Navbar from "../../../components/Navbar/Navbar.jsx";
 import Sidebar from "../../../components/UserSidebar/Sidebar.jsx";
+import UserDataBox from "../component/UserdataBox.jsx";
+
 import "../../../components/Table-user/Table-user.css";
 //import useFetch from "../../../Hooks/useFetch.js";
 import {Link} from "react-router-dom";
@@ -11,7 +13,12 @@ import { userColumns } from '../../../datatablesource.js';
 export default function UserDeclined() {
 
     //const {data,loading,error} = useFetch("/event?status=Declined");
-    const data=[5,8,2,6];
+    const data = [
+      { _id: '1', name: 'Event 1', status: 'Declined' },
+      { _id: '2', name: 'Event 2', status: 'Declined' },
+      { _id: '3', name: 'Event 3', status: 'Declined' },
+      { _id: '4', name: 'Event 4', status: 'Declined' },
+    ];
     const loading = false;
   return (
     <div>
@@ -57,6 +64,7 @@ export default function UserDeclined() {
         </div>
       </div>
     </div>
+    <UserDataBox/>
     </div>
   )
 }

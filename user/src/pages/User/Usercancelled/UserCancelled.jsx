@@ -3,6 +3,7 @@ import React from 'react';
 import Navbar from "../../../components/Navbar/Navbar.jsx";
 import Sidebar from "../../../components/UserSidebar/Sidebar.jsx";
 import "../../../components/Table-user/Table-user.css";
+import UserDataBox from "../component/UserdataBox.jsx";
 //import useFetch from "../../../Hooks/useFetch.js";
 import {Link} from "react-router-dom";
 import { DataGrid } from '@mui/x-data-grid';
@@ -11,7 +12,12 @@ import { userColumns } from '../../../datatablesource.js';
 export default function UserCancelled() {
 
     //const {data,loading,error} = useFetch("/event?status=Cancelled");
-    const data=[5,8,2,6];
+    const data = [
+      { _id: '1', name: 'Event 1', status: 'Cancelled' },
+      { _id: '2', name: 'Event 2', status: 'Cancelled' },
+      { _id: '3', name: 'Event 3', status: 'Cancelled' },
+      { _id: '4', name: 'Event 4', status: 'Cancelled' },
+    ];
     const loading = false;
   return (
     <div>
@@ -58,7 +64,7 @@ export default function UserCancelled() {
       </div>
     </div>
 
-
+    <UserDataBox/>
     </div>
   )
 }

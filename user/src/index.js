@@ -4,17 +4,17 @@ import App from './App';
 import { BrowserRouter } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
 
-/*
-ReactDOM.render(
-  <BrowserRouter>
-  <Provider store={store}>
-    <App />
-  </Provider>
-  </BrowserRouter>,
-  document.getElementById("root")
-);
 
-*/
+// ReactDOM.render(
+//   <BrowserRouter>
+//   <Provider store={store}>
+//     <App />
+//   </Provider>
+//   </BrowserRouter>,
+//   document.getElementById("root")
+// );
+
+
 
 // createRoot(document.getElementById('root')).render(
 // <BrowserRouter>
