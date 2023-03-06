@@ -3,6 +3,7 @@ import "./Navbar.css";
 import DropdownItem from "./DropdownItem.jsx";
 import logo from './Image/Logo.png';
 import cb from './Image/cb.png';
+import cblogo from './Image/cb.png';
 import admin from './Image/admin.png';
 import { MDBRow, MDBCol } from 'mdb-react-ui-kit';
 import toast from "react-hot-toast";
@@ -50,22 +51,25 @@ export default function Navbar() {
   return (
     <div>
         <nav class="navbar bg-light out-nav">
-        <div class="container-fluid">
+        <div class="nav-container-fluid">
             <MDBRow>
                 <MDBCol>
-                <img src={logo} className="logo" alt=""/>
+                 
+                 <img src={cb} className="nav-cb" alt=""/>
+                 
                 </MDBCol>
                 <MDBCol>
-                <img src={cb} className="cb" alt=""/>
+                <img src={logo} className="nav-logo" alt=""/> 
+                
                 </MDBCol>
                 <MDBCol>
                 <div className='menu-containered'>
-                <div className='menu-triggered' onClick={()=>{setOpen(!open)}}>
-                    <span className="Adname"> {user ? user.name : 'Loading...'} </span>
-                    <img src={admin} className="admin" alt=""/>
+                <div className='nav-menu-triggered' onClick={()=>{setOpen(!open)}}>
+                    <span className="nav-Adname"> {user ? user.name : 'Loading...'} </span>
+                    <img src={admin} className="nav-admin" alt=""/>
                 </div>
                 <MDBCol></MDBCol>
-                <div className={`dropdown-menues ${open? 'active':'inactive'}`}>
+                <div className={`nav-dropdown-menues ${open? 'active':'inactive'}`}>
                     <h6> {user ? user.name : 'Loading...'} </h6>
                     <ul>
                         <button onClick={handleLogOut}>Logout</button>
