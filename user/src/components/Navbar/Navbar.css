@@ -1,10 +1,10 @@
-.container-fluid{
+.nav-container-fluid{
     display: flex;
     align-items: center;
     justify-content: space-between;
     
 }
-.logo {
+.nav-logo {
     width: 65px;
     height: 65px;
     margin-left: 44px;
@@ -13,13 +13,13 @@
     flex-grow: 0;
 }
 
-.cb {
+.nav-cb {
     width: 69px;
     height: 45px;
   
 }
 
-.Adname {
+.nav-Adname {
     width: 119px;
     height: 100px;
     font-family: "Poppins";
@@ -36,7 +36,7 @@
     /* background-color: red; */
 }
   
-.admin {
+.nav-admin {
     width: 100px;
     height: 100px;
     /* Alt Light */
@@ -46,7 +46,7 @@
     
 }
 
-.menu-triggered img{
+.nav-menu-triggered img{
     position: absolute;
     top: 17px;
     right: 30px;
@@ -58,7 +58,7 @@
     margin-left: 77px;
 }
 
-.dropdown-menues{
+.nav-dropdown-menues{
     position:absolute;
     top: 50px;
     right: 5px;
@@ -68,7 +68,7 @@
     width: 150px;
 }
 
-.dropdown-menues::before{
+.nav-dropdown-menues::before{
     content:'';
     position: absolute;
     top: -2px;
@@ -79,37 +79,37 @@
     transform: rotate(45deg);
 }
 
-.dropdown-menues.active{
+.nav-dropdown-menues.active{
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
     transition: var(--speed) ease;
 }
 
-.dropdown-menues.inactive{
+.nav-dropdown-menues.inactive{
     opacity: 0;
     visibility: hidden;
     transform: translateY(-20px);
     transition: var(--speed) ease;
 }
 
-.dropdown-menues ul li{
+.nav-dropdown-menues ul li{
     padding: 3px 0px;
     border-top: 1px solid rgb(0,0,0,0.05);
 }
 
-.dropdown-menues ul li:hover{
+.nav-dropdown-menues ul li:hover{
     color: violet;
     cursor: pointer;
 }
 
-.dropdownItemes{
+.nav-dropdownItemes{
     display: flex;
     margin: 1px auto;
     margin-bottom: 2px;
 }
 
-.dropdownItemes a{
+.nav-dropdownItemes a{
     max-width: 70px;
     margin-left: 5px;
     transition: var(--speed);
