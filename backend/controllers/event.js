@@ -287,3 +287,20 @@ export const updateEventByUser = async (req,res,next)=>{
         });
     }
 };
+
+export const booking = async (req, res) => {
+  const apiFeatures = new ApiFeatures(Event.find(), req.query).search().filter();
+  try {
+    const events = await apiFeatures.query;
+   // const venues = await Venue.find();
+    res.status(200).json({
+      success: true,
+      events,
+    });
+  } catch (error) {
+    res.status(500).json({
+      success: false,
+      message: error.message,
+    });
+  }
+};

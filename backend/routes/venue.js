@@ -18,7 +18,7 @@ router.delete("/:id", deleteVenue );
 router.get("/:id", isAuthenticated, getVenue);
 
 //GETALL
-router.get("/", isAuthenticated, getAllVenue);
+router.get("/", getAllVenue);
 
 
 export default router
