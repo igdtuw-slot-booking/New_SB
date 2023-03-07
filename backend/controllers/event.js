@@ -207,7 +207,7 @@ export const myEvents = async (req,res,next)=>{
 };
 
 
-//Get all Events
+
 export const getallEvent = async (req,res)=>{
   const apiFeatures = new ApiFeatures(Event.find(), req.query).search().filter();
     try{
@@ -226,6 +226,18 @@ export const getallEvent = async (req,res)=>{
 };
 
 
+//Get all Events
+// export const getallEvent = async (req,res)=>{
+//     try{
+//         const event = await Event.find().populate("user");
+//         res.status(200).json(event);
+//     } catch (error) {
+//         res.status(500).json({
+//           success: false,
+//           message: error.message,
+//         });
+//     }
+// };
 
 export const countByStatus = async (req,res,next)=>{
     const statuses = req.query.status.split(',')

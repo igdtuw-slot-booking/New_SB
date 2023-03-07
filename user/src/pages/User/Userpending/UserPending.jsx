@@ -1,5 +1,4 @@
-import React from 'react';
-
+import React, { useState, useEffect } from 'react';
 import Navbar from "../../../components/Navbar/Navbar.jsx";
 import Sidebar from "../../../components/UserSidebar/Sidebar.jsx";
 import UserDataBox from "../component/UserdataBox.jsx";
@@ -10,14 +9,16 @@ import { DataGrid } from '@mui/x-data-grid';
 import { userColumns } from '../../../datatablesource.js';
 
 
+
 export default function UserPending() {
   const data = [
-    { _id: '1', name: 'Event 1', status: 'Pending' },
-    { _id: '2', name: 'Event 2', status: 'Pending' },
-    { _id: '3', name: 'Event 3', status: 'Pending' },
-    { _id: '4', name: 'Event 4', status: 'Pending' },
+    { _id: '1', name: 'Event 1'},
+    { _id: '2', name: 'Event 2'},
+    { _id: '3', name: 'Event 3'},
+    { _id: '4', name: 'Event 4'},
   ];
-const loading = false;
+  const loading = false;
+
   return (
     <div>
         <Navbar/>
@@ -32,10 +33,12 @@ const loading = false;
                 <div className='in-nav'>
                     <ul>
                     <li>
-                          <Link to="/" style={{color:'inherit', textDecoration:"none"}}><h6>Pending</h6></Link>
+                          <a href="http://localhost:3000/user">Pending</a>
+                          {/* <Link to="/" style={{color:'inherit', textDecoration:"none"}}><h6>Pending</h6></Link> */}
                         </li>
                         <li>
-                          <Link to="approved" style={{color:'inherit', textDecoration:"none"}}><h6>Approved</h6></Link>
+                          
+                          {/* <Link to="approved" style={{color:'inherit', textDecoration:"none"}}><h6>Approved</h6></Link> */}
                         </li>
                         <li>
                           <Link to="declined" style={{color:'inherit', textDecoration:"none"}}><h6>Declined</h6></Link>

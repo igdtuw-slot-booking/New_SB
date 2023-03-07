@@ -13,7 +13,7 @@ export default function Table() {
     const loading = false;
   return (
 
-    <div style={{ height: 400 }} className="Table-admin">
+    <div style={{ height: '75%' }} className="Table-admin">
       <div style={{ display: 'flex', height: '100%' }}>
         <div style={{ flexGrow: 1 }}>
             <MDBRow>

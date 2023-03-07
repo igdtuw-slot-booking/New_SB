@@ -14,10 +14,10 @@ export default function UserDeclined() {
 
     //const {data,loading,error} = useFetch("/event?status=Declined");
     const data = [
-      { _id: '1', name: 'Event 1', status: 'Declined' },
-      { _id: '2', name: 'Event 2', status: 'Declined' },
-      { _id: '3', name: 'Event 3', status: 'Declined' },
-      { _id: '4', name: 'Event 4', status: 'Declined' },
+      { _id: '1', name: 'Event 1'},
+      { _id: '2', name: 'Event 2'},
+      { _id: '3', name: 'Event 3'},
+      { _id: '4', name: 'Event 4'},
     ];
     const loading = false;
   return (
@@ -33,16 +33,20 @@ export default function UserDeclined() {
                 <div className='in-nav'>
                     <ul>
                     <li>
-                          <Link to="/" style={{color:'inherit', textDecoration:"none"}}><h6>Pending</h6></Link>
+                          <a href="http://localhost:3000/user">Pending</a>
+                          {/* <Link to="/" style={{color:'inherit', textDecoration:"none"}}><h6>Pending</h6></Link> */}
                         </li>
                         <li>
-                          <Link to="approved" style={{color:'inherit', textDecoration:"none"}}><h6>Approved</h6></Link>
+                          <a href="http://localhost:3000/user/:userId/approved">Approved</a>
+                          {/* <Link to="approved" style={{color:'inherit', textDecoration:"none"}}><h6>Approved</h6></Link> */}
                         </li>
                         <li>
-                          <Link to="declined" style={{color:'inherit', textDecoration:"none"}}><h6>Declined</h6></Link>
+                          <a href="http://localhost:3000/user/:userId/declined">Declined</a>
+                          {/* <Link to="declined" style={{color:'inherit', textDecoration:"none"}}><h6>Declined</h6></Link> */}
                         </li>
                         <li>
-                        <Link to="declined" style={{color:'inherit', textDecoration:"none"}}><h6>Cancelled</h6></Link>
+                          <a href="http://localhost:3000/user/:userId/cancelled">Cancelled</a>  
+                          {/* <Link to="cancelled" style={{color:'inherit', textDecoration:"none"}}><h6>Cancelled</h6></Link> */}
                         </li>
                     </ul>
                 </div>

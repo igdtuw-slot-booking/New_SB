@@ -26,7 +26,6 @@ export default function Navbar() {
     });
     const data = await res.json();
     //console.log(data);
-=======
    // console.log(data);
     if (data.success === true) {
       setUser(data.user);

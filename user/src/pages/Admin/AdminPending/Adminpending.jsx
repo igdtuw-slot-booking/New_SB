@@ -75,19 +75,22 @@ export default function Adminpending() {
             <div className='in-nav'>
               <ul>
                 <li>
-                  <Link to="/" style={{ color: 'inherit', textDecoration: "none" }}>
+                  <a href="http://localhost:3000/admin/">Pending</a>
+                  {/* <Link to="/" style={{ color: 'inherit', textDecoration: "none" }}>
                     <h6>Pending</h6>
-                  </Link>
+                  </Link> */}
                 </li>
                 <li>
-                  <Link to="approved" style={{ color: 'inherit', textDecoration: "none" }}>
+                  <a href="http://localhost:3000/admin/approved">Approved</a>
+                  {/* <Link to="approved" style={{ color: 'inherit', textDecoration: "none" }}>
                     <h6>Approved</h6>
-                  </Link>
+                  </Link> */}
                 </li>
                 <li>
-                  <Link to="declined" style={{ color: 'inherit', textDecoration: "none" }}>
+                  <a href="http://localhost:3000/admin/:userId/declined">Declined</a>
+                  {/* <Link to="declined" style={{ color: 'inherit', textDecoration: "none" }}>
                     <h6>Declined</h6>
-                  </Link>
+                  </Link> */}
                 </li>
               </ul>
             </div>

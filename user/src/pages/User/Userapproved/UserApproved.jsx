@@ -13,10 +13,10 @@ export default function UserApproved() {
 
     //const {data,loading,error} = useFetch("/event?status=Approved");
     const data = [
-      { _id: '1', name: 'Event 1', status: 'Approved' },
-      { _id: '2', name: 'Event 2', status: 'Approved' },
-      { _id: '3', name: 'Event 3', status: 'Approved' },
-      { _id: '4', name: 'Event 4', status: 'Approved' },
+      { _id: '1', name: 'Event 1'},
+      { _id: '2', name: 'Event 2'},
+      { _id: '3', name: 'Event 3'},
+      { _id: '4', name: 'Event 4'},
     ];
     const loading = false;
   return (
@@ -32,7 +32,7 @@ export default function UserApproved() {
                 <div className='in-nav'>
                     <ul>
                     <li>
-                          <a href="http://localhost:3000/user/">Pending</a>
+                          <a href="http://localhost:3000/user">Pending</a>
                           {/* <Link to="/" style={{color:'inherit', textDecoration:"none"}}><h6>Pending</h6></Link> */}
                         </li>
                         <li>
@@ -44,8 +44,8 @@ export default function UserApproved() {
                           {/* <Link to="declined" style={{color:'inherit', textDecoration:"none"}}><h6>Declined</h6></Link> */}
                         </li>
                         <li>
-                          <a href="http://localhost:3000/user/:userId/cancelled">Cancelled</a>
-                        {/* <Link to="cancelled" style={{color:'inherit', textDecoration:"none"}}><h6>Cancelled</h6></Link> */}
+                          <a href="http://localhost:3000/user/:userId/cancelled">Cancelled</a>  
+                          {/* <Link to="cancelled" style={{color:'inherit', textDecoration:"none"}}><h6>Cancelled</h6></Link> */}
                         </li>
                     </ul>
                 </div>

@@ -150,7 +150,7 @@ export const getAllVenue = async (req, res) => {
     const venues = await apiFeatures.query;
 
     //const venues = await Venue.find();
-=======
+
    // const venues = await Venue.find();
     res.status(200).json({
       success: true,
