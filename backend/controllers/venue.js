@@ -148,6 +148,9 @@ export const getAllVenue = async (req, res) => {
   const apiFeatures = new ApiFeatures(Venue.find(), req.query).search().filter();
   try {
     const venues = await apiFeatures.query;
+
+    //const venues = await Venue.find();
+=======
    // const venues = await Venue.find();
     res.status(200).json({
       success: true,

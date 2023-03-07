@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import "../../../components/Table/Table.css";
 //import useFetch from "../../../Hooks/useFetch.js";
 import {Link} from "react-router-dom";
@@ -26,6 +26,42 @@ const rows = [
 export default function Adminpending() {
   // Define state for loading
   const [loading, setLoading] = useState(false);
+  const [events, setEvents] = useState([]);
+  const [rows, setRows] = useState([]);
+
+
+  const fetchEvents = async () => {
+    setLoading(true);
+
+    try {
+      const response = await fetch('http://localhost:8877/api/event?status=Pending', {
+        method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "*", // Required for CORS support to work
+          },
+          credentials: "include",
+        
+      });
+      const data = await response.json();
+      //console.log(data);
+      if (data.success === true) {
+        setRows(data.event);
+        setLoading(false);
+        //setEvents(data.event);
+        //console.log(events);
+      }
+      
+    } catch (error) {
+      console.error(error);
+    }
+
+    setLoading(false);
+  };
+
+  useEffect(() => {
+    fetchEvents()
+  }, []);
 
   return (
     <div>
@@ -60,13 +96,16 @@ export default function Adminpending() {
             {loading ? (
               "Loading"
             ) : (
-              <DataGrid
-                rows={rows}
-                columns={userColumns}
-                pageSize={6}
-                rowsPerPageOptions={[5]}
-                getRowId={row => row.id}
-              />
+              <div style={{ height: 400, width: '100%' }}>
+      <DataGrid
+        rows={rows}
+        columns={userColumns}
+        pageSize={6}
+        rowsPerPageOptions={[5]}
+        getRowId={(row) => row._id}
+        loading={loading}
+      />
+    </div>
             )}
 
           </div>

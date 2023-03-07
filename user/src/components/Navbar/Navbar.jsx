@@ -25,6 +25,8 @@ export default function Navbar() {
       credentials: "include",
     });
     const data = await res.json();
+    //console.log(data);
+=======
    // console.log(data);
     if (data.success === true) {
       setUser(data.user);
