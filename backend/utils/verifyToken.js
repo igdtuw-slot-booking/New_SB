@@ -42,7 +42,8 @@ export const verifyAdmin = async (req,res,next)=>{
     );
 
     // check if the user role is 'research'
-    if (decoded.role==="Admin") {
+    //console.log(decoded.role);
+    if (decoded.role!=="Admin") {
       return res.status(403).json({
         success: false,
         message: "You don't have permission to access this resource",
